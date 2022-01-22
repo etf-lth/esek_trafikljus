@@ -1,0 +1,14 @@
+
+# Git ignore for altium projects
+!.gitattributes
+!.gitignore
+!readme.md
+!.gitkeep
+
+History/
+__Previews/
+Project Logs for go_sign/
+Project Outputs for go_sign/
+!*.SchDoc
+!*.PcbDoc
+!*.PcbDoc
