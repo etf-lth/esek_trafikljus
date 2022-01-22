@@ -8,7 +8,10 @@
 History/
 __Previews/
 Project Logs for go_sign/
+Project Logs for sign_lib/
 Project Outputs for go_sign/
+Project Outputs for sign_lib/
 !*.SchDoc
 !*.PcbDoc
-!*.PcbDoc
+!*.SchLib
+!*.PcbLib
