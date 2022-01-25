@@ -61,7 +61,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=VRULSSXP
+DocumentUniqueId=
 
 [Document2]
 DocumentPath=sign_lib.SchLib
