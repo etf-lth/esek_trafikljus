@@ -1,0 +1,1046 @@
+Added Component: Designator=C1_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C1_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C1_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C1_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C2_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C2_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C2_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C2_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C3_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C3_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C3_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C3_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C4_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C4_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C4_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C4_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C5_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C5_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C5_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C5_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C6_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C6_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C6_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C6_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C7_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C7_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C7_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C7_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C8_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C8_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C8_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C8_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C9_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C9_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C9_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C9_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C10_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C10_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C10_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C10_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C11_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C11_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C11_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C11_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C12_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C12_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C12_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C12_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C13_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C13_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C13_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C13_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C14_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C14_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C14_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C14_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C15_'(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C15_S2(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C15_S3(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C15_S4(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=C16(1206, capasitor)
+Add component (AddParameter): Name = "Value"; Value = "100n"; VariantName = "[No Variations]"
+Added Component: Designator=D1_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D1_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D1_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D1_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D2_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D2_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D2_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D2_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D3_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D3_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D3_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D3_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D4_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D4_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D4_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D4_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D5_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D5_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D5_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D5_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D6_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D6_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D6_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D6_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D7_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D7_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D7_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D7_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D8_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D8_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D8_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D8_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D9_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D9_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D9_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D9_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D10_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D10_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D10_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D10_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D11_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D11_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D11_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D11_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D12_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D12_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D12_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D12_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D13_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D13_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D13_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D13_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D14_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D14_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D14_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D14_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D15_'(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D15_S2(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D15_S3(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=D15_S4(SK9822_FLIPPED)
+Add component (AddParameter): Name = "DigiKey"; Value = "1568-1800-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "WS2812"; VariantName = "[No Variations]"
+Added Component: Designator=P1(2x3 PH)
+Add component (AddParameter): Name = "Value"; Value = "2x3 Pin Header, 2.54mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=C1_'-1
+Added Pin To Net: NetName=5V Pin=C1_S2-1
+Added Pin To Net: NetName=5V Pin=C1_S3-1
+Added Pin To Net: NetName=5V Pin=C1_S4-1
+Added Pin To Net: NetName=5V Pin=C2_'-1
+Added Pin To Net: NetName=5V Pin=C2_S2-1
+Added Pin To Net: NetName=5V Pin=C2_S3-1
+Added Pin To Net: NetName=5V Pin=C2_S4-1
+Added Pin To Net: NetName=5V Pin=C3_'-1
+Added Pin To Net: NetName=5V Pin=C3_S2-1
+Added Pin To Net: NetName=5V Pin=C3_S3-1
+Added Pin To Net: NetName=5V Pin=C3_S4-1
+Added Pin To Net: NetName=5V Pin=C4_'-1
+Added Pin To Net: NetName=5V Pin=C4_S2-1
+Added Pin To Net: NetName=5V Pin=C4_S3-1
+Added Pin To Net: NetName=5V Pin=C4_S4-1
+Added Pin To Net: NetName=5V Pin=C5_'-1
+Added Pin To Net: NetName=5V Pin=C5_S2-1
+Added Pin To Net: NetName=5V Pin=C5_S3-1
+Added Pin To Net: NetName=5V Pin=C5_S4-1
+Added Pin To Net: NetName=5V Pin=C6_'-1
+Added Pin To Net: NetName=5V Pin=C6_S2-1
+Added Pin To Net: NetName=5V Pin=C6_S3-1
+Added Pin To Net: NetName=5V Pin=C6_S4-1
+Added Pin To Net: NetName=5V Pin=C7_'-1
+Added Pin To Net: NetName=5V Pin=C7_S2-1
+Added Pin To Net: NetName=5V Pin=C7_S3-1
+Added Pin To Net: NetName=5V Pin=C7_S4-1
+Added Pin To Net: NetName=5V Pin=C8_'-1
+Added Pin To Net: NetName=5V Pin=C8_S2-1
+Added Pin To Net: NetName=5V Pin=C8_S3-1
+Added Pin To Net: NetName=5V Pin=C8_S4-1
+Added Pin To Net: NetName=5V Pin=C9_'-1
+Added Pin To Net: NetName=5V Pin=C9_S2-1
+Added Pin To Net: NetName=5V Pin=C9_S3-1
+Added Pin To Net: NetName=5V Pin=C9_S4-1
+Added Pin To Net: NetName=5V Pin=C10_'-1
+Added Pin To Net: NetName=5V Pin=C10_S2-1
+Added Pin To Net: NetName=5V Pin=C10_S3-1
+Added Pin To Net: NetName=5V Pin=C10_S4-1
+Added Pin To Net: NetName=5V Pin=C11_'-1
+Added Pin To Net: NetName=5V Pin=C11_S2-1
+Added Pin To Net: NetName=5V Pin=C11_S3-1
+Added Pin To Net: NetName=5V Pin=C11_S4-1
+Added Pin To Net: NetName=5V Pin=C12_'-1
+Added Pin To Net: NetName=5V Pin=C12_S2-1
+Added Pin To Net: NetName=5V Pin=C12_S3-1
+Added Pin To Net: NetName=5V Pin=C12_S4-1
+Added Pin To Net: NetName=5V Pin=C13_'-1
+Added Pin To Net: NetName=5V Pin=C13_S2-1
+Added Pin To Net: NetName=5V Pin=C13_S3-1
+Added Pin To Net: NetName=5V Pin=C13_S4-1
+Added Pin To Net: NetName=5V Pin=C14_'-1
+Added Pin To Net: NetName=5V Pin=C14_S2-1
+Added Pin To Net: NetName=5V Pin=C14_S3-1
+Added Pin To Net: NetName=5V Pin=C14_S4-1
+Added Pin To Net: NetName=5V Pin=C15_'-1
+Added Pin To Net: NetName=5V Pin=C15_S2-1
+Added Pin To Net: NetName=5V Pin=C15_S3-1
+Added Pin To Net: NetName=5V Pin=C15_S4-1
+Added Pin To Net: NetName=5V Pin=C16-1
+Added Pin To Net: NetName=5V Pin=D1_'-4
+Added Pin To Net: NetName=5V Pin=D1_S2-4
+Added Pin To Net: NetName=5V Pin=D1_S3-4
+Added Pin To Net: NetName=5V Pin=D1_S4-4
+Added Pin To Net: NetName=5V Pin=D2_'-4
+Added Pin To Net: NetName=5V Pin=D2_S2-4
+Added Pin To Net: NetName=5V Pin=D2_S3-4
+Added Pin To Net: NetName=5V Pin=D2_S4-4
+Added Pin To Net: NetName=5V Pin=D3_'-4
+Added Pin To Net: NetName=5V Pin=D3_S2-4
+Added Pin To Net: NetName=5V Pin=D3_S3-4
+Added Pin To Net: NetName=5V Pin=D3_S4-4
+Added Pin To Net: NetName=5V Pin=D4_'-4
+Added Pin To Net: NetName=5V Pin=D4_S2-4
+Added Pin To Net: NetName=5V Pin=D4_S3-4
+Added Pin To Net: NetName=5V Pin=D4_S4-4
+Added Pin To Net: NetName=5V Pin=D5_'-4
+Added Pin To Net: NetName=5V Pin=D5_S2-4
+Added Pin To Net: NetName=5V Pin=D5_S3-4
+Added Pin To Net: NetName=5V Pin=D5_S4-4
+Added Pin To Net: NetName=5V Pin=D6_'-4
+Added Pin To Net: NetName=5V Pin=D6_S2-4
+Added Pin To Net: NetName=5V Pin=D6_S3-4
+Added Pin To Net: NetName=5V Pin=D6_S4-4
+Added Pin To Net: NetName=5V Pin=D7_'-4
+Added Pin To Net: NetName=5V Pin=D7_S2-4
+Added Pin To Net: NetName=5V Pin=D7_S3-4
+Added Pin To Net: NetName=5V Pin=D7_S4-4
+Added Pin To Net: NetName=5V Pin=D8_'-4
+Added Pin To Net: NetName=5V Pin=D8_S2-4
+Added Pin To Net: NetName=5V Pin=D8_S3-4
+Added Pin To Net: NetName=5V Pin=D8_S4-4
+Added Pin To Net: NetName=5V Pin=D9_'-4
+Added Pin To Net: NetName=5V Pin=D9_S2-4
+Added Pin To Net: NetName=5V Pin=D9_S3-4
+Added Pin To Net: NetName=5V Pin=D9_S4-4
+Added Pin To Net: NetName=5V Pin=D10_'-4
+Added Pin To Net: NetName=5V Pin=D10_S2-4
+Added Pin To Net: NetName=5V Pin=D10_S3-4
+Added Pin To Net: NetName=5V Pin=D10_S4-4
+Added Pin To Net: NetName=5V Pin=D11_'-4
+Added Pin To Net: NetName=5V Pin=D11_S2-4
+Added Pin To Net: NetName=5V Pin=D11_S3-4
+Added Pin To Net: NetName=5V Pin=D11_S4-4
+Added Pin To Net: NetName=5V Pin=D12_'-4
+Added Pin To Net: NetName=5V Pin=D12_S2-4
+Added Pin To Net: NetName=5V Pin=D12_S3-4
+Added Pin To Net: NetName=5V Pin=D12_S4-4
+Added Pin To Net: NetName=5V Pin=D13_'-4
+Added Pin To Net: NetName=5V Pin=D13_S2-4
+Added Pin To Net: NetName=5V Pin=D13_S3-4
+Added Pin To Net: NetName=5V Pin=D13_S4-4
+Added Pin To Net: NetName=5V Pin=D14_'-4
+Added Pin To Net: NetName=5V Pin=D14_S2-4
+Added Pin To Net: NetName=5V Pin=D14_S3-4
+Added Pin To Net: NetName=5V Pin=D14_S4-4
+Added Pin To Net: NetName=5V Pin=D15_'-4
+Added Pin To Net: NetName=5V Pin=D15_S2-4
+Added Pin To Net: NetName=5V Pin=D15_S3-4
+Added Pin To Net: NetName=5V Pin=D15_S4-4
+Added Net: Name=5V
+Added Pin To Net: NetName=CKI Pin=D1_'-2
+Added Pin To Net: NetName=CKI Pin=P1-5
+Added Net: Name=CKI
+Added Pin To Net: NetName=GND Pin=C1_'-0
+Added Pin To Net: NetName=GND Pin=C1_S2-0
+Added Pin To Net: NetName=GND Pin=C1_S3-0
+Added Pin To Net: NetName=GND Pin=C1_S4-0
+Added Pin To Net: NetName=GND Pin=C2_'-0
+Added Pin To Net: NetName=GND Pin=C2_S2-0
+Added Pin To Net: NetName=GND Pin=C2_S3-0
+Added Pin To Net: NetName=GND Pin=C2_S4-0
+Added Pin To Net: NetName=GND Pin=C3_'-0
+Added Pin To Net: NetName=GND Pin=C3_S2-0
+Added Pin To Net: NetName=GND Pin=C3_S3-0
+Added Pin To Net: NetName=GND Pin=C3_S4-0
+Added Pin To Net: NetName=GND Pin=C4_'-0
+Added Pin To Net: NetName=GND Pin=C4_S2-0
+Added Pin To Net: NetName=GND Pin=C4_S3-0
+Added Pin To Net: NetName=GND Pin=C4_S4-0
+Added Pin To Net: NetName=GND Pin=C5_'-0
+Added Pin To Net: NetName=GND Pin=C5_S2-0
+Added Pin To Net: NetName=GND Pin=C5_S3-0
+Added Pin To Net: NetName=GND Pin=C5_S4-0
+Added Pin To Net: NetName=GND Pin=C6_'-0
+Added Pin To Net: NetName=GND Pin=C6_S2-0
+Added Pin To Net: NetName=GND Pin=C6_S3-0
+Added Pin To Net: NetName=GND Pin=C6_S4-0
+Added Pin To Net: NetName=GND Pin=C7_'-0
+Added Pin To Net: NetName=GND Pin=C7_S2-0
+Added Pin To Net: NetName=GND Pin=C7_S3-0
+Added Pin To Net: NetName=GND Pin=C7_S4-0
+Added Pin To Net: NetName=GND Pin=C8_'-0
+Added Pin To Net: NetName=GND Pin=C8_S2-0
+Added Pin To Net: NetName=GND Pin=C8_S3-0
+Added Pin To Net: NetName=GND Pin=C8_S4-0
+Added Pin To Net: NetName=GND Pin=C9_'-0
+Added Pin To Net: NetName=GND Pin=C9_S2-0
+Added Pin To Net: NetName=GND Pin=C9_S3-0
+Added Pin To Net: NetName=GND Pin=C9_S4-0
+Added Pin To Net: NetName=GND Pin=C10_'-0
+Added Pin To Net: NetName=GND Pin=C10_S2-0
+Added Pin To Net: NetName=GND Pin=C10_S3-0
+Added Pin To Net: NetName=GND Pin=C10_S4-0
+Added Pin To Net: NetName=GND Pin=C11_'-0
+Added Pin To Net: NetName=GND Pin=C11_S2-0
+Added Pin To Net: NetName=GND Pin=C11_S3-0
+Added Pin To Net: NetName=GND Pin=C11_S4-0
+Added Pin To Net: NetName=GND Pin=C12_'-0
+Added Pin To Net: NetName=GND Pin=C12_S2-0
+Added Pin To Net: NetName=GND Pin=C12_S3-0
+Added Pin To Net: NetName=GND Pin=C12_S4-0
+Added Pin To Net: NetName=GND Pin=C13_'-0
+Added Pin To Net: NetName=GND Pin=C13_S2-0
+Added Pin To Net: NetName=GND Pin=C13_S3-0
+Added Pin To Net: NetName=GND Pin=C13_S4-0
+Added Pin To Net: NetName=GND Pin=C14_'-0
+Added Pin To Net: NetName=GND Pin=C14_S2-0
+Added Pin To Net: NetName=GND Pin=C14_S3-0
+Added Pin To Net: NetName=GND Pin=C14_S4-0
+Added Pin To Net: NetName=GND Pin=C15_'-0
+Added Pin To Net: NetName=GND Pin=C15_S2-0
+Added Pin To Net: NetName=GND Pin=C15_S3-0
+Added Pin To Net: NetName=GND Pin=C15_S4-0
+Added Pin To Net: NetName=GND Pin=C16-0
+Added Pin To Net: NetName=GND Pin=D1_'-3
+Added Pin To Net: NetName=GND Pin=D1_S2-3
+Added Pin To Net: NetName=GND Pin=D1_S3-3
+Added Pin To Net: NetName=GND Pin=D1_S4-3
+Added Pin To Net: NetName=GND Pin=D2_'-3
+Added Pin To Net: NetName=GND Pin=D2_S2-3
+Added Pin To Net: NetName=GND Pin=D2_S3-3
+Added Pin To Net: NetName=GND Pin=D2_S4-3
+Added Pin To Net: NetName=GND Pin=D3_'-3
+Added Pin To Net: NetName=GND Pin=D3_S2-3
+Added Pin To Net: NetName=GND Pin=D3_S3-3
+Added Pin To Net: NetName=GND Pin=D3_S4-3
+Added Pin To Net: NetName=GND Pin=D4_'-3
+Added Pin To Net: NetName=GND Pin=D4_S2-3
+Added Pin To Net: NetName=GND Pin=D4_S3-3
+Added Pin To Net: NetName=GND Pin=D4_S4-3
+Added Pin To Net: NetName=GND Pin=D5_'-3
+Added Pin To Net: NetName=GND Pin=D5_S2-3
+Added Pin To Net: NetName=GND Pin=D5_S3-3
+Added Pin To Net: NetName=GND Pin=D5_S4-3
+Added Pin To Net: NetName=GND Pin=D6_'-3
+Added Pin To Net: NetName=GND Pin=D6_S2-3
+Added Pin To Net: NetName=GND Pin=D6_S3-3
+Added Pin To Net: NetName=GND Pin=D6_S4-3
+Added Pin To Net: NetName=GND Pin=D7_'-3
+Added Pin To Net: NetName=GND Pin=D7_S2-3
+Added Pin To Net: NetName=GND Pin=D7_S3-3
+Added Pin To Net: NetName=GND Pin=D7_S4-3
+Added Pin To Net: NetName=GND Pin=D8_'-3
+Added Pin To Net: NetName=GND Pin=D8_S2-3
+Added Pin To Net: NetName=GND Pin=D8_S3-3
+Added Pin To Net: NetName=GND Pin=D8_S4-3
+Added Pin To Net: NetName=GND Pin=D9_'-3
+Added Pin To Net: NetName=GND Pin=D9_S2-3
+Added Pin To Net: NetName=GND Pin=D9_S3-3
+Added Pin To Net: NetName=GND Pin=D9_S4-3
+Added Pin To Net: NetName=GND Pin=D10_'-3
+Added Pin To Net: NetName=GND Pin=D10_S2-3
+Added Pin To Net: NetName=GND Pin=D10_S3-3
+Added Pin To Net: NetName=GND Pin=D10_S4-3
+Added Pin To Net: NetName=GND Pin=D11_'-3
+Added Pin To Net: NetName=GND Pin=D11_S2-3
+Added Pin To Net: NetName=GND Pin=D11_S3-3
+Added Pin To Net: NetName=GND Pin=D11_S4-3
+Added Pin To Net: NetName=GND Pin=D12_'-3
+Added Pin To Net: NetName=GND Pin=D12_S2-3
+Added Pin To Net: NetName=GND Pin=D12_S3-3
+Added Pin To Net: NetName=GND Pin=D12_S4-3
+Added Pin To Net: NetName=GND Pin=D13_'-3
+Added Pin To Net: NetName=GND Pin=D13_S2-3
+Added Pin To Net: NetName=GND Pin=D13_S3-3
+Added Pin To Net: NetName=GND Pin=D13_S4-3
+Added Pin To Net: NetName=GND Pin=D14_'-3
+Added Pin To Net: NetName=GND Pin=D14_S2-3
+Added Pin To Net: NetName=GND Pin=D14_S3-3
+Added Pin To Net: NetName=GND Pin=D14_S4-3
+Added Pin To Net: NetName=GND Pin=D15_'-3
+Added Pin To Net: NetName=GND Pin=D15_S2-3
+Added Pin To Net: NetName=GND Pin=D15_S3-3
+Added Pin To Net: NetName=GND Pin=D15_S4-3
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-3
+Added Net: Name=GND
+Added Pin To Net: NetName=NetD1_'_5 Pin=D1_'-5
+Added Pin To Net: NetName=NetD1_'_5 Pin=D2_'-2
+Added Net: Name=NetD1_'_5
+Added Pin To Net: NetName=NetD1_'_6 Pin=D1_'-6
+Added Pin To Net: NetName=NetD1_'_6 Pin=D2_'-1
+Added Net: Name=NetD1_'_6
+Added Pin To Net: NetName=NetD1_S2_1 Pin=D1_S2-1
+Added Pin To Net: NetName=NetD1_S2_1 Pin=D15_'-6
+Added Net: Name=NetD1_S2_1
+Added Pin To Net: NetName=NetD1_S2_2 Pin=D1_S2-2
+Added Pin To Net: NetName=NetD1_S2_2 Pin=D15_'-5
+Added Net: Name=NetD1_S2_2
+Added Pin To Net: NetName=NetD1_S2_5 Pin=D1_S2-5
+Added Pin To Net: NetName=NetD1_S2_5 Pin=D2_S2-2
+Added Net: Name=NetD1_S2_5
+Added Pin To Net: NetName=NetD1_S2_6 Pin=D1_S2-6
+Added Pin To Net: NetName=NetD1_S2_6 Pin=D2_S2-1
+Added Net: Name=NetD1_S2_6
+Added Pin To Net: NetName=NetD1_S3_1 Pin=D1_S3-1
+Added Pin To Net: NetName=NetD1_S3_1 Pin=D15_S2-6
+Added Net: Name=NetD1_S3_1
+Added Pin To Net: NetName=NetD1_S3_2 Pin=D1_S3-2
+Added Pin To Net: NetName=NetD1_S3_2 Pin=D15_S2-5
+Added Net: Name=NetD1_S3_2
+Added Pin To Net: NetName=NetD1_S3_5 Pin=D1_S3-5
+Added Pin To Net: NetName=NetD1_S3_5 Pin=D2_S3-2
+Added Net: Name=NetD1_S3_5
+Added Pin To Net: NetName=NetD1_S3_6 Pin=D1_S3-6
+Added Pin To Net: NetName=NetD1_S3_6 Pin=D2_S3-1
+Added Net: Name=NetD1_S3_6
+Added Pin To Net: NetName=NetD1_S4_1 Pin=D1_S4-1
+Added Pin To Net: NetName=NetD1_S4_1 Pin=D15_S3-6
+Added Net: Name=NetD1_S4_1
+Added Pin To Net: NetName=NetD1_S4_2 Pin=D1_S4-2
+Added Pin To Net: NetName=NetD1_S4_2 Pin=D15_S3-5
+Added Net: Name=NetD1_S4_2
+Added Pin To Net: NetName=NetD1_S4_5 Pin=D1_S4-5
+Added Pin To Net: NetName=NetD1_S4_5 Pin=D2_S4-2
+Added Net: Name=NetD1_S4_5
+Added Pin To Net: NetName=NetD1_S4_6 Pin=D1_S4-6
+Added Pin To Net: NetName=NetD1_S4_6 Pin=D2_S4-1
+Added Net: Name=NetD1_S4_6
+Added Pin To Net: NetName=NetD2_'_5 Pin=D2_'-5
+Added Pin To Net: NetName=NetD2_'_5 Pin=D3_'-2
+Added Net: Name=NetD2_'_5
+Added Pin To Net: NetName=NetD2_'_6 Pin=D2_'-6
+Added Pin To Net: NetName=NetD2_'_6 Pin=D3_'-1
+Added Net: Name=NetD2_'_6
+Added Pin To Net: NetName=NetD2_S2_5 Pin=D2_S2-5
+Added Pin To Net: NetName=NetD2_S2_5 Pin=D3_S2-2
+Added Net: Name=NetD2_S2_5
+Added Pin To Net: NetName=NetD2_S2_6 Pin=D2_S2-6
+Added Pin To Net: NetName=NetD2_S2_6 Pin=D3_S2-1
+Added Net: Name=NetD2_S2_6
+Added Pin To Net: NetName=NetD2_S3_5 Pin=D2_S3-5
+Added Pin To Net: NetName=NetD2_S3_5 Pin=D3_S3-2
+Added Net: Name=NetD2_S3_5
+Added Pin To Net: NetName=NetD2_S3_6 Pin=D2_S3-6
+Added Pin To Net: NetName=NetD2_S3_6 Pin=D3_S3-1
+Added Net: Name=NetD2_S3_6
+Added Pin To Net: NetName=NetD2_S4_5 Pin=D2_S4-5
+Added Pin To Net: NetName=NetD2_S4_5 Pin=D3_S4-2
+Added Net: Name=NetD2_S4_5
+Added Pin To Net: NetName=NetD2_S4_6 Pin=D2_S4-6
+Added Pin To Net: NetName=NetD2_S4_6 Pin=D3_S4-1
+Added Net: Name=NetD2_S4_6
+Added Pin To Net: NetName=NetD3_'_5 Pin=D3_'-5
+Added Pin To Net: NetName=NetD3_'_5 Pin=D4_'-2
+Added Net: Name=NetD3_'_5
+Added Pin To Net: NetName=NetD3_'_6 Pin=D3_'-6
+Added Pin To Net: NetName=NetD3_'_6 Pin=D4_'-1
+Added Net: Name=NetD3_'_6
+Added Pin To Net: NetName=NetD3_S2_5 Pin=D3_S2-5
+Added Pin To Net: NetName=NetD3_S2_5 Pin=D4_S2-2
+Added Net: Name=NetD3_S2_5
+Added Pin To Net: NetName=NetD3_S2_6 Pin=D3_S2-6
+Added Pin To Net: NetName=NetD3_S2_6 Pin=D4_S2-1
+Added Net: Name=NetD3_S2_6
+Added Pin To Net: NetName=NetD3_S3_5 Pin=D3_S3-5
+Added Pin To Net: NetName=NetD3_S3_5 Pin=D4_S3-2
+Added Net: Name=NetD3_S3_5
+Added Pin To Net: NetName=NetD3_S3_6 Pin=D3_S3-6
+Added Pin To Net: NetName=NetD3_S3_6 Pin=D4_S3-1
+Added Net: Name=NetD3_S3_6
+Added Pin To Net: NetName=NetD3_S4_5 Pin=D3_S4-5
+Added Pin To Net: NetName=NetD3_S4_5 Pin=D4_S4-2
+Added Net: Name=NetD3_S4_5
+Added Pin To Net: NetName=NetD3_S4_6 Pin=D3_S4-6
+Added Pin To Net: NetName=NetD3_S4_6 Pin=D4_S4-1
+Added Net: Name=NetD3_S4_6
+Added Pin To Net: NetName=NetD4_'_5 Pin=D4_'-5
+Added Pin To Net: NetName=NetD4_'_5 Pin=D5_'-2
+Added Net: Name=NetD4_'_5
+Added Pin To Net: NetName=NetD4_'_6 Pin=D4_'-6
+Added Pin To Net: NetName=NetD4_'_6 Pin=D5_'-1
+Added Net: Name=NetD4_'_6
+Added Pin To Net: NetName=NetD4_S2_5 Pin=D4_S2-5
+Added Pin To Net: NetName=NetD4_S2_5 Pin=D5_S2-2
+Added Net: Name=NetD4_S2_5
+Added Pin To Net: NetName=NetD4_S2_6 Pin=D4_S2-6
+Added Pin To Net: NetName=NetD4_S2_6 Pin=D5_S2-1
+Added Net: Name=NetD4_S2_6
+Added Pin To Net: NetName=NetD4_S3_5 Pin=D4_S3-5
+Added Pin To Net: NetName=NetD4_S3_5 Pin=D5_S3-2
+Added Net: Name=NetD4_S3_5
+Added Pin To Net: NetName=NetD4_S3_6 Pin=D4_S3-6
+Added Pin To Net: NetName=NetD4_S3_6 Pin=D5_S3-1
+Added Net: Name=NetD4_S3_6
+Added Pin To Net: NetName=NetD4_S4_5 Pin=D4_S4-5
+Added Pin To Net: NetName=NetD4_S4_5 Pin=D5_S4-2
+Added Net: Name=NetD4_S4_5
+Added Pin To Net: NetName=NetD4_S4_6 Pin=D4_S4-6
+Added Pin To Net: NetName=NetD4_S4_6 Pin=D5_S4-1
+Added Net: Name=NetD4_S4_6
+Added Pin To Net: NetName=NetD5_'_5 Pin=D5_'-5
+Added Pin To Net: NetName=NetD5_'_5 Pin=D6_'-2
+Added Net: Name=NetD5_'_5
+Added Pin To Net: NetName=NetD5_'_6 Pin=D5_'-6
+Added Pin To Net: NetName=NetD5_'_6 Pin=D6_'-1
+Added Net: Name=NetD5_'_6
+Added Pin To Net: NetName=NetD5_S2_5 Pin=D5_S2-5
+Added Pin To Net: NetName=NetD5_S2_5 Pin=D6_S2-2
+Added Net: Name=NetD5_S2_5
+Added Pin To Net: NetName=NetD5_S2_6 Pin=D5_S2-6
+Added Pin To Net: NetName=NetD5_S2_6 Pin=D6_S2-1
+Added Net: Name=NetD5_S2_6
+Added Pin To Net: NetName=NetD5_S3_5 Pin=D5_S3-5
+Added Pin To Net: NetName=NetD5_S3_5 Pin=D6_S3-2
+Added Net: Name=NetD5_S3_5
+Added Pin To Net: NetName=NetD5_S3_6 Pin=D5_S3-6
+Added Pin To Net: NetName=NetD5_S3_6 Pin=D6_S3-1
+Added Net: Name=NetD5_S3_6
+Added Pin To Net: NetName=NetD5_S4_5 Pin=D5_S4-5
+Added Pin To Net: NetName=NetD5_S4_5 Pin=D6_S4-2
+Added Net: Name=NetD5_S4_5
+Added Pin To Net: NetName=NetD5_S4_6 Pin=D5_S4-6
+Added Pin To Net: NetName=NetD5_S4_6 Pin=D6_S4-1
+Added Net: Name=NetD5_S4_6
+Added Pin To Net: NetName=NetD6_'_5 Pin=D6_'-5
+Added Pin To Net: NetName=NetD6_'_5 Pin=D7_'-2
+Added Net: Name=NetD6_'_5
+Added Pin To Net: NetName=NetD6_'_6 Pin=D6_'-6
+Added Pin To Net: NetName=NetD6_'_6 Pin=D7_'-1
+Added Net: Name=NetD6_'_6
+Added Pin To Net: NetName=NetD6_S2_5 Pin=D6_S2-5
+Added Pin To Net: NetName=NetD6_S2_5 Pin=D7_S2-2
+Added Net: Name=NetD6_S2_5
+Added Pin To Net: NetName=NetD6_S2_6 Pin=D6_S2-6
+Added Pin To Net: NetName=NetD6_S2_6 Pin=D7_S2-1
+Added Net: Name=NetD6_S2_6
+Added Pin To Net: NetName=NetD6_S3_5 Pin=D6_S3-5
+Added Pin To Net: NetName=NetD6_S3_5 Pin=D7_S3-2
+Added Net: Name=NetD6_S3_5
+Added Pin To Net: NetName=NetD6_S3_6 Pin=D6_S3-6
+Added Pin To Net: NetName=NetD6_S3_6 Pin=D7_S3-1
+Added Net: Name=NetD6_S3_6
+Added Pin To Net: NetName=NetD6_S4_5 Pin=D6_S4-5
+Added Pin To Net: NetName=NetD6_S4_5 Pin=D7_S4-2
+Added Net: Name=NetD6_S4_5
+Added Pin To Net: NetName=NetD6_S4_6 Pin=D6_S4-6
+Added Pin To Net: NetName=NetD6_S4_6 Pin=D7_S4-1
+Added Net: Name=NetD6_S4_6
+Added Pin To Net: NetName=NetD7_'_5 Pin=D7_'-5
+Added Pin To Net: NetName=NetD7_'_5 Pin=D8_'-2
+Added Net: Name=NetD7_'_5
+Added Pin To Net: NetName=NetD7_'_6 Pin=D7_'-6
+Added Pin To Net: NetName=NetD7_'_6 Pin=D8_'-1
+Added Net: Name=NetD7_'_6
+Added Pin To Net: NetName=NetD7_S2_5 Pin=D7_S2-5
+Added Pin To Net: NetName=NetD7_S2_5 Pin=D8_S2-2
+Added Net: Name=NetD7_S2_5
+Added Pin To Net: NetName=NetD7_S2_6 Pin=D7_S2-6
+Added Pin To Net: NetName=NetD7_S2_6 Pin=D8_S2-1
+Added Net: Name=NetD7_S2_6
+Added Pin To Net: NetName=NetD7_S3_5 Pin=D7_S3-5
+Added Pin To Net: NetName=NetD7_S3_5 Pin=D8_S3-2
+Added Net: Name=NetD7_S3_5
+Added Pin To Net: NetName=NetD7_S3_6 Pin=D7_S3-6
+Added Pin To Net: NetName=NetD7_S3_6 Pin=D8_S3-1
+Added Net: Name=NetD7_S3_6
+Added Pin To Net: NetName=NetD7_S4_5 Pin=D7_S4-5
+Added Pin To Net: NetName=NetD7_S4_5 Pin=D8_S4-2
+Added Net: Name=NetD7_S4_5
+Added Pin To Net: NetName=NetD7_S4_6 Pin=D7_S4-6
+Added Pin To Net: NetName=NetD7_S4_6 Pin=D8_S4-1
+Added Net: Name=NetD7_S4_6
+Added Pin To Net: NetName=NetD8_'_5 Pin=D8_'-5
+Added Pin To Net: NetName=NetD8_'_5 Pin=D9_'-2
+Added Net: Name=NetD8_'_5
+Added Pin To Net: NetName=NetD8_'_6 Pin=D8_'-6
+Added Pin To Net: NetName=NetD8_'_6 Pin=D9_'-1
+Added Net: Name=NetD8_'_6
+Added Pin To Net: NetName=NetD8_S2_5 Pin=D8_S2-5
+Added Pin To Net: NetName=NetD8_S2_5 Pin=D9_S2-2
+Added Net: Name=NetD8_S2_5
+Added Pin To Net: NetName=NetD8_S2_6 Pin=D8_S2-6
+Added Pin To Net: NetName=NetD8_S2_6 Pin=D9_S2-1
+Added Net: Name=NetD8_S2_6
+Added Pin To Net: NetName=NetD8_S3_5 Pin=D8_S3-5
+Added Pin To Net: NetName=NetD8_S3_5 Pin=D9_S3-2
+Added Net: Name=NetD8_S3_5
+Added Pin To Net: NetName=NetD8_S3_6 Pin=D8_S3-6
+Added Pin To Net: NetName=NetD8_S3_6 Pin=D9_S3-1
+Added Net: Name=NetD8_S3_6
+Added Pin To Net: NetName=NetD8_S4_5 Pin=D8_S4-5
+Added Pin To Net: NetName=NetD8_S4_5 Pin=D9_S4-2
+Added Net: Name=NetD8_S4_5
+Added Pin To Net: NetName=NetD8_S4_6 Pin=D8_S4-6
+Added Pin To Net: NetName=NetD8_S4_6 Pin=D9_S4-1
+Added Net: Name=NetD8_S4_6
+Added Pin To Net: NetName=NetD9_'_5 Pin=D9_'-5
+Added Pin To Net: NetName=NetD9_'_5 Pin=D10_'-2
+Added Net: Name=NetD9_'_5
+Added Pin To Net: NetName=NetD9_'_6 Pin=D9_'-6
+Added Pin To Net: NetName=NetD9_'_6 Pin=D10_'-1
+Added Net: Name=NetD9_'_6
+Added Pin To Net: NetName=NetD9_S2_5 Pin=D9_S2-5
+Added Pin To Net: NetName=NetD9_S2_5 Pin=D10_S2-2
+Added Net: Name=NetD9_S2_5
+Added Pin To Net: NetName=NetD9_S2_6 Pin=D9_S2-6
+Added Pin To Net: NetName=NetD9_S2_6 Pin=D10_S2-1
+Added Net: Name=NetD9_S2_6
+Added Pin To Net: NetName=NetD9_S3_5 Pin=D9_S3-5
+Added Pin To Net: NetName=NetD9_S3_5 Pin=D10_S3-2
+Added Net: Name=NetD9_S3_5
+Added Pin To Net: NetName=NetD9_S3_6 Pin=D9_S3-6
+Added Pin To Net: NetName=NetD9_S3_6 Pin=D10_S3-1
+Added Net: Name=NetD9_S3_6
+Added Pin To Net: NetName=NetD9_S4_5 Pin=D9_S4-5
+Added Pin To Net: NetName=NetD9_S4_5 Pin=D10_S4-2
+Added Net: Name=NetD9_S4_5
+Added Pin To Net: NetName=NetD9_S4_6 Pin=D9_S4-6
+Added Pin To Net: NetName=NetD9_S4_6 Pin=D10_S4-1
+Added Net: Name=NetD9_S4_6
+Added Pin To Net: NetName=NetD10_'_5 Pin=D10_'-5
+Added Pin To Net: NetName=NetD10_'_5 Pin=D11_'-2
+Added Net: Name=NetD10_'_5
+Added Pin To Net: NetName=NetD10_'_6 Pin=D10_'-6
+Added Pin To Net: NetName=NetD10_'_6 Pin=D11_'-1
+Added Net: Name=NetD10_'_6
+Added Pin To Net: NetName=NetD10_S2_5 Pin=D10_S2-5
+Added Pin To Net: NetName=NetD10_S2_5 Pin=D11_S2-2
+Added Net: Name=NetD10_S2_5
+Added Pin To Net: NetName=NetD10_S2_6 Pin=D10_S2-6
+Added Pin To Net: NetName=NetD10_S2_6 Pin=D11_S2-1
+Added Net: Name=NetD10_S2_6
+Added Pin To Net: NetName=NetD10_S3_5 Pin=D10_S3-5
+Added Pin To Net: NetName=NetD10_S3_5 Pin=D11_S3-2
+Added Net: Name=NetD10_S3_5
+Added Pin To Net: NetName=NetD10_S3_6 Pin=D10_S3-6
+Added Pin To Net: NetName=NetD10_S3_6 Pin=D11_S3-1
+Added Net: Name=NetD10_S3_6
+Added Pin To Net: NetName=NetD10_S4_5 Pin=D10_S4-5
+Added Pin To Net: NetName=NetD10_S4_5 Pin=D11_S4-2
+Added Net: Name=NetD10_S4_5
+Added Pin To Net: NetName=NetD10_S4_6 Pin=D10_S4-6
+Added Pin To Net: NetName=NetD10_S4_6 Pin=D11_S4-1
+Added Net: Name=NetD10_S4_6
+Added Pin To Net: NetName=NetD11_'_5 Pin=D11_'-5
+Added Pin To Net: NetName=NetD11_'_5 Pin=D12_'-2
+Added Net: Name=NetD11_'_5
+Added Pin To Net: NetName=NetD11_'_6 Pin=D11_'-6
+Added Pin To Net: NetName=NetD11_'_6 Pin=D12_'-1
+Added Net: Name=NetD11_'_6
+Added Pin To Net: NetName=NetD11_S2_5 Pin=D11_S2-5
+Added Pin To Net: NetName=NetD11_S2_5 Pin=D12_S2-2
+Added Net: Name=NetD11_S2_5
+Added Pin To Net: NetName=NetD11_S2_6 Pin=D11_S2-6
+Added Pin To Net: NetName=NetD11_S2_6 Pin=D12_S2-1
+Added Net: Name=NetD11_S2_6
+Added Pin To Net: NetName=NetD11_S3_5 Pin=D11_S3-5
+Added Pin To Net: NetName=NetD11_S3_5 Pin=D12_S3-2
+Added Net: Name=NetD11_S3_5
+Added Pin To Net: NetName=NetD11_S3_6 Pin=D11_S3-6
+Added Pin To Net: NetName=NetD11_S3_6 Pin=D12_S3-1
+Added Net: Name=NetD11_S3_6
+Added Pin To Net: NetName=NetD11_S4_5 Pin=D11_S4-5
+Added Pin To Net: NetName=NetD11_S4_5 Pin=D12_S4-2
+Added Net: Name=NetD11_S4_5
+Added Pin To Net: NetName=NetD11_S4_6 Pin=D11_S4-6
+Added Pin To Net: NetName=NetD11_S4_6 Pin=D12_S4-1
+Added Net: Name=NetD11_S4_6
+Added Pin To Net: NetName=NetD12_'_5 Pin=D12_'-5
+Added Pin To Net: NetName=NetD12_'_5 Pin=D13_'-2
+Added Net: Name=NetD12_'_5
+Added Pin To Net: NetName=NetD12_'_6 Pin=D12_'-6
+Added Pin To Net: NetName=NetD12_'_6 Pin=D13_'-1
+Added Net: Name=NetD12_'_6
+Added Pin To Net: NetName=NetD12_S2_5 Pin=D12_S2-5
+Added Pin To Net: NetName=NetD12_S2_5 Pin=D13_S2-2
+Added Net: Name=NetD12_S2_5
+Added Pin To Net: NetName=NetD12_S2_6 Pin=D12_S2-6
+Added Pin To Net: NetName=NetD12_S2_6 Pin=D13_S2-1
+Added Net: Name=NetD12_S2_6
+Added Pin To Net: NetName=NetD12_S3_5 Pin=D12_S3-5
+Added Pin To Net: NetName=NetD12_S3_5 Pin=D13_S3-2
+Added Net: Name=NetD12_S3_5
+Added Pin To Net: NetName=NetD12_S3_6 Pin=D12_S3-6
+Added Pin To Net: NetName=NetD12_S3_6 Pin=D13_S3-1
+Added Net: Name=NetD12_S3_6
+Added Pin To Net: NetName=NetD12_S4_5 Pin=D12_S4-5
+Added Pin To Net: NetName=NetD12_S4_5 Pin=D13_S4-2
+Added Net: Name=NetD12_S4_5
+Added Pin To Net: NetName=NetD12_S4_6 Pin=D12_S4-6
+Added Pin To Net: NetName=NetD12_S4_6 Pin=D13_S4-1
+Added Net: Name=NetD12_S4_6
+Added Pin To Net: NetName=NetD13_'_5 Pin=D13_'-5
+Added Pin To Net: NetName=NetD13_'_5 Pin=D14_'-2
+Added Net: Name=NetD13_'_5
+Added Pin To Net: NetName=NetD13_'_6 Pin=D13_'-6
+Added Pin To Net: NetName=NetD13_'_6 Pin=D14_'-1
+Added Net: Name=NetD13_'_6
+Added Pin To Net: NetName=NetD13_S2_5 Pin=D13_S2-5
+Added Pin To Net: NetName=NetD13_S2_5 Pin=D14_S2-2
+Added Net: Name=NetD13_S2_5
+Added Pin To Net: NetName=NetD13_S2_6 Pin=D13_S2-6
+Added Pin To Net: NetName=NetD13_S2_6 Pin=D14_S2-1
+Added Net: Name=NetD13_S2_6
+Added Pin To Net: NetName=NetD13_S3_5 Pin=D13_S3-5
+Added Pin To Net: NetName=NetD13_S3_5 Pin=D14_S3-2
+Added Net: Name=NetD13_S3_5
+Added Pin To Net: NetName=NetD13_S3_6 Pin=D13_S3-6
+Added Pin To Net: NetName=NetD13_S3_6 Pin=D14_S3-1
+Added Net: Name=NetD13_S3_6
+Added Pin To Net: NetName=NetD13_S4_5 Pin=D13_S4-5
+Added Pin To Net: NetName=NetD13_S4_5 Pin=D14_S4-2
+Added Net: Name=NetD13_S4_5
+Added Pin To Net: NetName=NetD13_S4_6 Pin=D13_S4-6
+Added Pin To Net: NetName=NetD13_S4_6 Pin=D14_S4-1
+Added Net: Name=NetD13_S4_6
+Added Pin To Net: NetName=NetD14_'_5 Pin=D14_'-5
+Added Pin To Net: NetName=NetD14_'_5 Pin=D15_'-2
+Added Net: Name=NetD14_'_5
+Added Pin To Net: NetName=NetD14_'_6 Pin=D14_'-6
+Added Pin To Net: NetName=NetD14_'_6 Pin=D15_'-1
+Added Net: Name=NetD14_'_6
+Added Pin To Net: NetName=NetD14_S2_5 Pin=D14_S2-5
+Added Pin To Net: NetName=NetD14_S2_5 Pin=D15_S2-2
+Added Net: Name=NetD14_S2_5
+Added Pin To Net: NetName=NetD14_S2_6 Pin=D14_S2-6
+Added Pin To Net: NetName=NetD14_S2_6 Pin=D15_S2-1
+Added Net: Name=NetD14_S2_6
+Added Pin To Net: NetName=NetD14_S3_5 Pin=D14_S3-5
+Added Pin To Net: NetName=NetD14_S3_5 Pin=D15_S3-2
+Added Net: Name=NetD14_S3_5
+Added Pin To Net: NetName=NetD14_S3_6 Pin=D14_S3-6
+Added Pin To Net: NetName=NetD14_S3_6 Pin=D15_S3-1
+Added Net: Name=NetD14_S3_6
+Added Pin To Net: NetName=NetD14_S4_5 Pin=D14_S4-5
+Added Pin To Net: NetName=NetD14_S4_5 Pin=D15_S4-2
+Added Net: Name=NetD14_S4_5
+Added Pin To Net: NetName=NetD14_S4_6 Pin=D14_S4-6
+Added Pin To Net: NetName=NetD14_S4_6 Pin=D15_S4-1
+Added Net: Name=NetD14_S4_6
+Added Pin To Net: NetName=NetD15_S4_5 Pin=D15_S4-5
+Added Net: Name=NetD15_S4_5
+Added Pin To Net: NetName=NetD15_S4_6 Pin=D15_S4-6
+Added Net: Name=NetD15_S4_6
+Added Pin To Net: NetName=SDI Pin=D1_'-1
+Added Pin To Net: NetName=SDI Pin=P1-6
+Added Net: Name=SDI
+Added Class: Name='
+Added Class: Name=S2
+Added Class: Name=S3
+Added Class: Name=S4
+Added Class: Name=stop_sign
+Added Class: Name=sk9822_array
+Added Room: Name='
+Added Room: Name=S2
+Added Room: Name=S3
+Added Room: Name=S4
+Added Room: Name=stop_sign
