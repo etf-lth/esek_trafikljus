@@ -1,0 +1,41 @@
+Added Component: Designator=C5(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50n"; VariantName = "[No Variations]"
+Added Component: Designator=C8(0603 cap)
+Add component (AddParameter): Name = "Order number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50n"; VariantName = "[No Variations]"
+Added Component: Designator=R5(0603)
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R7(0603)
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R11(0603)
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R12(0603)
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=RE1(RotaryEncoder)
+Added Pin To Net: NetName=GND Pin=C5-0
+Added Pin To Net: NetName=ROT_A Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C8-0
+Added Pin To Net: NetName=ROT_B Pin=C8-1
+Added Pin To Net: NetName=3V3_AVR Pin=R5-1
+Added Pin To Net: NetName=3V3_AVR Pin=R7-1
+Added Pin To Net: NetName=ROT_A Pin=R11-0
+Added Pin To Net: NetName=ROT_B Pin=R12-0
+Added Pin To Net: NetName=GND Pin=RE1-2
+Added Pin To Net: NetName=NetR5_0 Pin=R5-0
+Added Pin To Net: NetName=NetR5_0 Pin=R11-1
+Added Pin To Net: NetName=NetR5_0 Pin=RE1-1
+Added Net: Name=NetR5_0
+Added Pin To Net: NetName=NetR7_0 Pin=R7-0
+Added Pin To Net: NetName=NetR7_0 Pin=R12-1
+Added Pin To Net: NetName=NetR7_0 Pin=RE1-3
+Added Net: Name=NetR7_0
+Added Member To Class: ClassName=sign_controller Member=Component C5 0603, capacitor
+Added Member To Class: ClassName=sign_controller Member=Component C8 0603, capacitor
+Added Member To Class: ClassName=sign_controller Member=Component R5 0603, resistor
+Added Member To Class: ClassName=sign_controller Member=Component R7 0603, resistor
+Added Member To Class: ClassName=sign_controller Member=Component R11 0603, resistor
+Added Member To Class: ClassName=sign_controller Member=Component R12 0603, resistor
+Added Member To Class: ClassName=sign_controller Member=Component RE1 Encoder
