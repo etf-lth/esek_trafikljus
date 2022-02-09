@@ -1,9 +1,7 @@
 
-# Git ignore for altium projects
-!.gitattributes
-!.gitignore
-!readme.md
-!.gitkeep
+#LT Spice
+*.log
+*.raw
 
 History/
 __Previews/
