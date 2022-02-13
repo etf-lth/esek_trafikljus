@@ -1,0 +1,14 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : PCB Document [sign_controller.PcbDoc]
+   Generated File[sign_controller_Copper_Signal_Top.gbr]
+   Generated File[sign_controller_Keep-out.gbr]
+   Generated File[sign_controller.RUL]
+   Generated File[sign_controller.EXTREP]
+   Generated File[sign_controller.REP]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 21:45:40 On 2022-02-13
