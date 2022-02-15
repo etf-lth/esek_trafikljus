@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [esek_panel1.PcbDoc]
+   Generated File[esek_panel1.TXT]
+   Generated File[esek_panel1.LDP]
+   Generated File[esek_panel1.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 22:38:50 On 2022-02-14

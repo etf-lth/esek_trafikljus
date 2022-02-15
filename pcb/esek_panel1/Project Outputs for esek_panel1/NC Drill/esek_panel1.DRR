@@ -1,0 +1,20 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: esek_panel1.PcbDoc   2022-02-14  22:38:49
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : esek_panel1.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.4mm (16mil)                                             Round             214       PTH        1903.45mm (74.94inch)
+T2      0.6mm (24mil)                                             Round             3         PTH        7.18mm (0.28inch)
+T3      1mm (39mil)                                               Round             78        PTH        533.61mm (21.01inch)
+T4      1.5mm (59mil)                                             Round             15        PTH        263.12mm (10.36inch)
+T5      3.2mm (126mil)                                            Round             4         PTH        277.90mm (10.94inch)
+T6      3.5mm (138mil)                                            Round             2         PTH        12.21mm (0.48inch)
+T7      4mm (157mil)                                              Round             61        PTH        966.92mm (38.07inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              377
+
+Total Processing Time (hh:mm:ss) : 00:00:01
