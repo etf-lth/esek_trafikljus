@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [stop_sign.PcbDoc]
+   Generated File[stop_sign.TXT]
+   Generated File[stop_sign.LDP]
+   Generated File[stop_sign.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 00:40:28 On 2022-04-03
