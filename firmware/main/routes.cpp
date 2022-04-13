@@ -1,5 +1,6 @@
 #include "routes.h"
 #include "webserver.h"
+#include "webresponse.h"
 
 #include <iostream>
 
@@ -7,6 +8,7 @@
 
 // include the html file as a C++ string
 #include "html/index_html.h"
+#include "html/admin_html.h"
 
 using namespace std;
 
@@ -45,9 +47,10 @@ esp_err_t root_get_handler(httpd_req_t *req)
 		cout << p.first << ": " << p.second << endl;
 	}
 
-	/* Set some custom headers */
-	g_webServer.addResponseHeader(req, "Custom Header 1", "Eat shit and die");
-	g_webServer.send(req, index_html);
+	HTMLResponse response(req);
+	response.addHeader("Custom Header 1", "Eat shit and die")
+	        .addData(index_html);
+	g_webServer.send(response);
 
 	return ESP_OK;
 }
@@ -233,7 +236,7 @@ esp_err_t admin_handler(httpd_req_t *req)
 		{
 			ESP_LOGE(TAG, "Not authenticated");
 			httpd_resp_set_status(req, HTTPD_401);
-			httpd_resp_set_type(req, "application/json");
+			//httpd_resp_set_type(req, "application/json");
 			httpd_resp_set_hdr(req, "Connection", "keep-alive");
 			httpd_resp_set_hdr(req, "WWW-Authenticate", "Basic realm=\"Hello\"");
 			httpd_resp_send(req, NULL, 0);
@@ -241,9 +244,14 @@ esp_err_t admin_handler(httpd_req_t *req)
 		else
 		{
 			ESP_LOGI(TAG, "Authenticated!");
+			HTMLResponse response(req);
+			response.setStatus(HTTPD_200)
+			        .addHeader("Connection", "keep-alive")
+			        .addData(admin_html);
+
 			char *basic_auth_resp = NULL;
 			httpd_resp_set_status(req, HTTPD_200);
-			httpd_resp_set_type(req, "application/json");
+			//httpd_resp_set_type(req, "application/json");
 			httpd_resp_set_hdr(req, "Connection", "keep-alive");
 			asprintf(&basic_auth_resp, "{\"authenticated\": true,\"user\": \"%s\"}", basic_auth_info->username);
 			if (!basic_auth_resp)
@@ -253,7 +261,7 @@ esp_err_t admin_handler(httpd_req_t *req)
 				free(buf);
 				return ESP_ERR_NO_MEM;
 			}
-			httpd_resp_send(req, basic_auth_resp, strlen(basic_auth_resp));
+			g_webServer.send(response);
 			free(basic_auth_resp);
 		}
 		free(auth_credentials);
@@ -263,7 +271,7 @@ esp_err_t admin_handler(httpd_req_t *req)
 	{
 		ESP_LOGE(TAG, "No auth header received");
 		httpd_resp_set_status(req, HTTPD_401);
-		httpd_resp_set_type(req, "application/json");
+		//httpd_resp_set_type(req, "application/json");
 		httpd_resp_set_hdr(req, "Connection", "keep-alive");
 		httpd_resp_set_hdr(req, "WWW-Authenticate", "Basic realm=\"Hello\"");
 		httpd_resp_send(req, NULL, 0);

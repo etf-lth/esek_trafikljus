@@ -31,7 +31,7 @@ extern "C" {
 void app_main();
 }
 
-const char *TAG = "Trafikljus";
+const char *TAG = "Traffic Light";
 
 
 void app_main(void)

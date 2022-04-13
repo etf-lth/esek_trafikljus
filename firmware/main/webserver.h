@@ -1,12 +1,14 @@
 #pragma once
 
 #include "routes.h"
+#include "webresponse.h"
 
 #include <string>
 #include <map>
 
 #include <esp_http_server.h>
 #include <esp_event.h>
+
 
 extern const char *TAG;
 
@@ -34,9 +36,7 @@ public:
 	std::map<std::string, std::string> getQueryParams(const httpd_req_t *req);
 	std::map<std::string, std::string> getRequestHeaders(const httpd_req_t *req);
 
-	WebServer& addResponseHeader(httpd_req_t *req, std::string field, std::string value);
-
-	esp_err_t send(httpd_req_t *req, std::string data) const;
+	esp_err_t send(WebResponse &resp) const;
 
 	/**
 	 * @brief Add URI handler in a fluid builder fashion.

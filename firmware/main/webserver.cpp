@@ -90,16 +90,9 @@ std::map<std::string, std::string> WebServer::getRequestHeaders(const httpd_req_
 }
 
 
-WebServer& WebServer::addResponseHeader(httpd_req_t *req, std::string field, std::string value)
+esp_err_t WebServer::send(WebResponse &resp) const
 {
-	httpd_resp_set_hdr(req, field.c_str(), value.c_str());
-	return *this;
-}
-
-
-esp_err_t WebServer::send(httpd_req_t *req, std::string data) const
-{
-	return httpd_resp_send(req, data.c_str(), HTTPD_RESP_USE_STRLEN);
+	return httpd_resp_send(resp.getRequestHandle(), resp.getResponse().c_str(), HTTPD_RESP_USE_STRLEN);
 }
 
 
