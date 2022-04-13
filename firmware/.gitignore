@@ -1,0 +1,13 @@
+
+build/
+
+sdkconfig
+sdkconfig.old
+
+.vscode
+.devcontainer
+
+# Visual Studio
+.vs
+debug.log
+CMakeSettings.json
