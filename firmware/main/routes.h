@@ -52,8 +52,8 @@ typedef struct
 } basic_auth_info_t;
 
 static const basic_auth_info_t g_basic_auth_info = {
-	.username = "root",
-	.password = "toor"
+	.username = CONFIG_ADMIN_USERNAME,
+	.password = CONFIG_ADMIN_PASSWORD
 };
 
 static const httpd_uri_t g_admin = {
