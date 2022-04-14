@@ -64,5 +64,7 @@ void app_main(void)
 	ESP_ERROR_CHECK(example_connect());
 
 	// add handlers for the URLs
-	g_webServer.addHandler(&g_root).addHandler(&g_echo);
+	g_webServer.addHandler(&g_root)
+	           .addHandler(&g_echo)
+	           .addHandler(&g_about);
 }

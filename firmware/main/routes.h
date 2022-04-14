@@ -14,13 +14,13 @@ extern const char *TAG;
 
 esp_err_t root_get_handler(httpd_req_t *req);
 esp_err_t echo_post_handler(httpd_req_t *req);
-esp_err_t ctrl_put_handler(httpd_req_t *req);
+esp_err_t about_get_handler(httpd_req_t *req);
 esp_err_t admin_handler(httpd_req_t *req);
+
 
 esp_err_t http_404_error_handler(httpd_req_t *req, httpd_err_code_t err);
 
 char* http_auth_basic(const char *username, const char *password);
-esp_err_t basic_auth_get_handler(httpd_req_t *req);
 
 static const httpd_uri_t g_root = {
 	.uri = "/",
@@ -35,14 +35,14 @@ static const httpd_uri_t g_echo = {
 	.uri = "/echo",
 	.method = HTTP_POST,
 	.handler = echo_post_handler,
-	.user_ctx = NULL
+	.user_ctx = nullptr
 };
 
-static const httpd_uri_t g_ctrl = {
-	.uri = "/ctrl",
-	.method = HTTP_PUT,
-	.handler = ctrl_put_handler,
-	.user_ctx = NULL
+static const httpd_uri_t g_about = {
+	.uri = "/about",
+	.method = HTTP_GET,
+	.handler = about_get_handler,
+	.user_ctx = nullptr
 };
 
 typedef struct

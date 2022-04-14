@@ -6,6 +6,7 @@
     <meta name="author" content="Jonathan Sönnerup and Christoffer Cederberg">
     <title>Traffic Light</title>
 
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
     <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
@@ -40,37 +41,18 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
-      <h3 class="masthead-brand">Traffic Lights - Admin</h3>
+      <h3 class="masthead-brand">Traffic Light</h3>
       <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="/">Home</a>
-        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link active" href="/about">About</a>
       </nav>
     </div>
   </header>
 
   <main role="main" class="inner cover">
-    <h1 class="cover-heading">%s</h1>
-    <form method="GET">
-      <div class="form-group">
-        <label for="text">Traffic Light text:</label>
-        <input type="text" class="form-control" id="text" placeholder="Skriv text här" name="text">
-      </div>
-      <button type="submit" class="btn btn-primary">Update</button>
-    </form>
-
-    <br/>
+    <h1 class="cover-heading">About</h1>
     <hr/>
-
-    <form method="GET">
-      <div class="form-group text-center d-flex justify-content-center align-items-center flex-column">
-        <input type="color" id="top" name="top" value="#e66465">
-        <label for="head">Top color</label>
-
-        <input type="color" id="bottom" name="bottom" value="#f6b73c">
-        <label for="body">Bottom color</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Update colors</button>
-    </form>
+    <p>The infamous Traffic Light is a highly sophisticated device to make life much more enjoyable in the dark corners of Edekvata.</p>
 
   </main>
 

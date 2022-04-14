@@ -9,6 +9,7 @@
 // include the html file as a C++ string
 #include "html/index_html.h"
 #include "html/admin_html.h"
+#include "html/about_html.h"
 
 using namespace std;
 
@@ -63,6 +64,15 @@ esp_err_t echo_post_handler(httpd_req_t *req)
 
 	// End response
 	httpd_resp_send_chunk(req, nullptr, 0);
+	return ESP_OK;
+}
+
+
+esp_err_t about_get_handler(httpd_req_t *req)
+{
+	HTMLResponse response(req);
+	response.addData(about_html);
+	g_webServer.send(response);
 	return ESP_OK;
 }
 
