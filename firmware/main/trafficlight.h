@@ -9,10 +9,12 @@ private:
 	Color m_bottomColor;
 
 public:
-	TrafficLight(const Color &top, const Color &bottom);
+	TrafficLight();
 
 	void setTopColor(const Color &top);
 	void setBottomColor(const Color &bottom);
+
+	const Color& getTopColor() const { return m_topColor; }
 };
 
 extern TrafficLight g_trafficLight;

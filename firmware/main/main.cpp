@@ -24,6 +24,7 @@
 
 #include "webserver.h"
 #include "routes.h"
+#include "trafficlight.h"
 
 using namespace std;
 
@@ -32,6 +33,8 @@ void app_main();
 }
 
 const char *TAG = "Traffic Light";
+
+int test{5};
 
 
 void app_main(void)
@@ -67,4 +70,6 @@ void app_main(void)
 	g_webServer.addHandler(&g_root)
 	           .addHandler(&g_echo)
 	           .addHandler(&g_about);
+
+	cout << "TL: " << g_trafficLight.getTopColor().r() << endl;
 }
