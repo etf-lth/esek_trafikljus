@@ -1,7 +1,7 @@
 #include "color.h"
 
 
-Color::Color(unsigned red, unsigned green, unsigned blue) : m_red(red), m_green(green), m_blue(blue)
+Color::Color(unsigned int red, unsigned int green, unsigned int blue) : m_red(red), m_green(green), m_blue(blue)
 {
 }
 
@@ -14,7 +14,7 @@ Color::Color(const std::string &hexCode)
 }
 
 
-UniColor::UniColor(unsigned red, unsigned green, unsigned blue) : Color(red, green, blue)
+UniColor::UniColor(unsigned int red, unsigned int green, unsigned int blue) : Color(red, green, blue)
 {
 }
 
