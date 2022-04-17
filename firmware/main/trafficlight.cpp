@@ -10,8 +10,6 @@ TrafficLight g_trafficLight;
 
 TrafficLight::TrafficLight() : m_stopColor(UniColor("ff0000")), m_goColor(UniColor("00ff00"))
 {
-	//m_topColor = UniColor(0, 0, 0);
-	//m_bottomColor = UniColor(0, 0, 0);
 	gpio_config_t io_conf{};
 	io_conf.intr_type = GPIO_INTR_DISABLE;
 	io_conf.mode = GPIO_MODE_OUTPUT;

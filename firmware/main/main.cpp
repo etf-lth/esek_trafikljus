@@ -24,7 +24,6 @@
 
 #include "webserver.h"
 #include "routes.h"
-#include "trafficlight.h"
 
 using namespace std;
 
@@ -33,8 +32,6 @@ void app_main();
 }
 
 const char *TAG = "Traffic Light";
-
-int test{5};
 
 
 void app_main(void)
@@ -48,8 +45,6 @@ void app_main(void)
 	/**
 	 * Register two events and bind the callbacks to the WiFi object.
 	 * We want to know when we have an IP, and when we disconnet from the WiFi.
-	 * We can not bind a non-static member function since the caller needs a reference to the object (this).
-	 * Instead, we call a static member function and pass the object reference (this) as an argument.
 	 */
 	ESP_ERROR_CHECK(
 		esp_event_handler_instance_register(IP_EVENT, IP_EVENT_STA_GOT_IP, WebServer::connectHandler, nullptr, nullptr)

@@ -8,7 +8,7 @@
 using namespace std;
 
 /* A global WebServer variable, since we need to access this from multiple places,
- * and cannot always pass it as reference, e.g., in events
+ * and cannot always pass it as reference, e.g., in events.
  */
 WebServer g_webServer;
 
@@ -34,7 +34,7 @@ bool WebServer::start()
 	config.lru_purge_enable = true;
 
 	// Start the httpd server
-	ESP_LOGI(TAG, "Starting server on port: '%d'", config.server_port);
+	ESP_LOGI(TAG, "Starting web server on port: '%d'", config.server_port);
 	if (httpd_start(&server, &config) != ESP_OK) return false;
 
 	m_server = server;
@@ -85,7 +85,7 @@ map<string, string> WebServer::getQueryParams(const httpd_req_t *req)
 std::map<std::string, std::string> WebServer::getRequestHeaders(const httpd_req_t *req)
 {
 	map<string, string> headers;
-
+	// TODO: Implement
 	return headers;
 }
 
