@@ -5,16 +5,17 @@
 class TrafficLight
 {
 private:
-	Color m_topColor;
-	Color m_bottomColor;
+	Color m_stopColor;
+	Color m_goColor;
 
 public:
 	TrafficLight();
 
-	void setTopColor(const Color &top);
-	void setBottomColor(const Color &bottom);
+	void setStopColor(const Color &stop);
+	void setGoColor(const Color &go);
 
-	const Color& getTopColor() const { return m_topColor; }
+	const Color& getStopColor() const { return m_stopColor; }
+	const Color& getGoColor() const { return m_stopColor; }
 };
 
 extern TrafficLight g_trafficLight;

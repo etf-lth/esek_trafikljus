@@ -47,8 +47,8 @@ static const httpd_uri_t g_about = {
 
 typedef struct
 {
-	char *username;
-	char *password;
+	const char *username;
+	const char *password;
 } basic_auth_info_t;
 
 static const basic_auth_info_t g_basic_auth_info = {
