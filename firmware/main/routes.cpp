@@ -207,10 +207,10 @@ esp_err_t admin_handler(httpd_req_t *req)
 			const auto &val = params.at(WebConstants::g_colorTop);
 			if (val.length() == WebConstants::g_hexStringLength)
 			{
-				// skip the "%" sign
-				const auto &hexVal = val.substr(1);
+				// skip the "%23" sign (#)
+				const auto &hexVal = val.substr(3);
 				const UniColor topColor(hexVal);
-				//g_trafficLight.setTopColor(topColor);
+				g_trafficLight.setTopColor(topColor);
 			}
 		}
 
@@ -219,10 +219,10 @@ esp_err_t admin_handler(httpd_req_t *req)
 			const auto &val = params.at(WebConstants::g_colorBottom);
 			if (val.length() == WebConstants::g_hexStringLength)
 			{
-				// skip the "%" sign
-				const auto &hexVal = val.substr(1);
+				// skip the "%23" sign (#)
+				const auto &hexVal = val.substr(3);
 				const UniColor bottomColor(hexVal);
-				//g_trafficLight.setBottomColor(bottomColor);
+				g_trafficLight.setBottomColor(bottomColor);
 			}
 		}
 

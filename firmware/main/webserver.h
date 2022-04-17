@@ -19,7 +19,7 @@ namespace WebConstants
 	const std::string g_paramSeparator = "=";
 	const std::string g_colorTop = "top";
 	const std::string g_colorBottom = "bottom";
-	constexpr int g_hexStringLength = 7; // including the "%" sign
+	constexpr int g_hexStringLength = 9; // including the "%23" ascii sign (#)
 }
 
 
