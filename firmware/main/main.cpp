@@ -23,19 +23,15 @@
 #include <sys/param.h>
 #include "protocol_examples_common.h"
 
-#include "webserver.h"
+#include "io.h"
 #include "routes.h"
+#include "webserver.h"
 
-// TODO: Move out
-#define SPI_CLOCK 				1000000
+#define STATIC      0
+#define SHIFTING    1
+#define SWEEP       2
+#define RAINBOW     3
 
-#define GO_LED_CLK_PIN			18
-#define GO_LED_DATA_PIN			19
-#define GO_LED_NUMBER			64
-
-#define STOP_LED_CLK_PIN		22
-#define STOP_LED_DATA_PIN		23
-#define STOP_LED_NUMBER			60
 
 using namespace std;
 
@@ -46,6 +42,7 @@ void app_main();
 const char *TAG = "Traffic Light";
 
 void led_color(char *leds, uint8_t led_number, char r, char g, char b);
+uint32_t hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v);
 void stop_driver(void *pvParameters);
 void go_driver(void *pvParameters);
 void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, spi_device_handle_t *spi_handle,
@@ -60,6 +57,24 @@ void led_color(char *leds, uint8_t led_number, char r, char g, char b)
     leds[4*led_number + 3] = g;
 }
 
+uint32_t hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v)
+{
+    uint8_t f = (h % 60) * 255 / 60;
+    uint8_t p = (255 - s) * (uint16_t)v / 255;
+    uint8_t q = (255 - f * (uint16_t)s / 255) * (uint16_t)v / 255;
+    uint8_t t = (255 - (255 - f) * (uint16_t)s / 255) * (uint16_t)v / 255;
+    uint32_t r = 0, g = 0, b = 0;
+
+    switch((h / 60) % 6){
+        case 0: r = v; g = t; b = p; break;
+        case 1: r = q; g = v; b = p; break;
+        case 2: r = p; g = v; b = t; break;
+        case 3: r = p; g = q; b = v; break;
+        case 4: r = t; g = p; b = v; break;
+        case 5: r = v; g = p; b = q; break;
+    }
+    return (r << 16 | g << 8 | b);
+}
 
 void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, spi_device_handle_t *spi_handle,
 		spi_transaction_t *trans_desc, char *led_data, int data_pin, int clk_pin, int led_number)
@@ -130,10 +145,12 @@ void stop_driver(void *pvParameters)
     data[(STOP_LED_NUMBER+1)*4 + 2] = 0xff;
     data[(STOP_LED_NUMBER+1)*4 + 3] = 0xff;
 
-	while(true) {
+	while(true) { 
+        
         for (int led = 1; led <= STOP_LED_NUMBER; led++){
             led_color(data, led, 0x7f, 0x00, 0x00);	// rgb
         }
+        
         ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle, &trans_desc, portMAX_DELAY));
         vTaskDelay(10000 / portTICK_RATE_MS);
     }
@@ -163,12 +180,62 @@ void go_driver(void *pvParameters)
     data[(GO_LED_NUMBER+1)*4 + 2] = 0xff;
     data[(GO_LED_NUMBER+1)*4 + 3] = 0xff;
 
+
+    int state = RAINBOW;
+
+    uint16_t color_shift = 0xf333;
+    uint16_t colors;
+    uint32_t color_time;
+    uint32_t colors_hsv;
+
 	while(true) {
-        for (int led = 1; led <= GO_LED_NUMBER; led++){
-            led_color(data, led, 0x00, 0x7f, 0x00);	// rgb
+
+        switch (state) {
+            case STATIC:
+
+                for (int led = 1; led <= GO_LED_NUMBER; led++){
+                    led_color(data, led, 0x00, 0x7f, 0x00);	// rgb
+                }
+                break;
+
+            case SHIFTING:
+
+                color_time = 0xff & esp_log_timestamp();
+                for (int led = 1; led <= GO_LED_NUMBER; led++){
+                    colors = color_time - go_sign_y[led];
+                    led_color(data, led, (char) (colors) & 0x7f,
+                        (char) (colors) & 0x7f, (char) (255 - colors) & 0x7f);	// rgb
+                }
+                break;
+
+            case SWEEP:
+
+                if (color_shift > 0x00f0) {
+                    color_shift >>= 1;
+                } else {
+                    color_shift = 0xf333;
+                }
+                for (int led = 1; led <= GO_LED_NUMBER; led++){
+                    colors = color_shift << (go_sign_y[led-1]/30);
+                    led_color(data, led, (char) (colors >> 8) & 0x0f,
+                        (char) (colors >> 4) & 0x0f, (char) colors & 0x0f);	// rgb
+                }
+                break;
+
+            case RAINBOW:
+
+                color_time = 0xff & esp_log_timestamp();
+                for (int led = 1; led <= GO_LED_NUMBER; led++){
+                    uint8_t x = color_time - go_sign_y[led-1];
+                    colors_hsv = hsv_to_rgb((uint32_t)x * 359 / 256, 255, 255);
+                    led_color(data, led, (char) (colors_hsv >> 16) & 0x7f,
+                        (char) (colors_hsv >> 8) & 0x7f, (char) colors_hsv & 0x7f); // rgb
+                }
+                break;
         }
+
         ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle, &trans_desc, portMAX_DELAY));
-        vTaskDelay(10000 / portTICK_RATE_MS);
+        vTaskDelay(157 / portTICK_RATE_MS);
     }
 }
 

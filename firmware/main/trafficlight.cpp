@@ -7,7 +7,6 @@
 /* A global Traffic Light variable, since we need to access this from multiples places. */
 TrafficLight g_trafficLight;
 
-
 TrafficLight::TrafficLight() : m_stopColor(UniColor("ff0000")), m_goColor(UniColor("00ff00"))
 {
 	gpio_config_t io_conf{};
