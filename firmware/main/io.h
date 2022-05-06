@@ -1,6 +1,6 @@
 #pragma once
 
-#define SPI_CLOCK 				1000000
+#define SPI_CLOCK				1000000
 
 #define GO_LED_CLK_PIN			18
 #define GO_LED_DATA_PIN			19
