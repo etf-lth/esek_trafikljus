@@ -1,11 +1,3 @@
-/* Simple HTTP Server Example
-
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-*/
 
 #include <iostream>
 
@@ -46,6 +38,8 @@ const char *TAG = "Traffic Light";
 void go_driver(void *pvParameters);
 
 
+
+
 /*
 void go_driver(void *pvParameters)
 {
@@ -75,7 +69,6 @@ void go_driver(void *pvParameters)
 	uint16_t color_shift = 0xf333;
 	uint16_t colors;
 	uint32_t color_time;
-	uint32_t colors_hsv;
 
 	while(1) {
 
@@ -129,7 +122,7 @@ void go_driver(void *pvParameters)
 }
 */
 
-void app_main(void)
+void app_main()
 {
 	// TODO: Move out in to init_wifi() ?
 	/* Init WiFi */
@@ -175,9 +168,9 @@ void app_main(void)
 //		stop_driver,		/* Task's function. */
 //		"Stop sign driver",	/* Name of the task. */
 //		10000,			/* Stack size of the task */
-//		NULL,			/* Parameter of the task */
+//		nullptr,			/* Parameter of the task */
 //		2,			/* Priority of the task */
-//		NULL,			/* Task handle to keep track of created task */
+//		nullptr,			/* Task handle to keep track of created task */
 //		1			/* Pin task to core 1 */
 //	);
 
