@@ -1,11 +1,3 @@
-/* Simple HTTP Server Example
-
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-*/
 
 #include <iostream>
 
@@ -36,49 +28,85 @@
 using namespace std;
 
 extern "C" {
-void app_main();
+	void app_main();
 }
 
 const char *TAG = "Traffic Light";
 
-void led_color(char *leds, uint8_t led_number, char r, char g, char b);
+void led_color(char *leds, int led_number, char red, char green, char blue);
 
-/*
-/
-/   
-*/
-uint32_t hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v);
+/** @brief	Converts HSV color representation to RGB.
+ *	@param	hue	Color from color wheel
+ *	@param	saturation Color saturation
+ *	@param	value Brightness
+ *	@return RGB (Padding (8 bits), Red (8 bits), Green (8 bits), Blue (8 bits))
+ */
+uint32_t hsv_to_rgb(uint16_t hue, uint8_t saturation, uint8_t value);
+
+/** @brief	Stop sign controller
+ */
 void stop_driver(void *pvParameters);
+
+/** @brief	Go sign controller
+ */
 void go_driver(void *pvParameters);
+
+
 void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, spi_device_handle_t *spi_handle,
 		spi_transaction_t *trans_desc, char *led_data, int data_pin, int clk_pin, int led_number);
 
 
-void led_color(char *leds, uint8_t led_number, char r, char g, char b)
+void led_color(char *leds, int led_number, char red, char green, char blue)
 {
 	leds[4*led_number + 0] = 0xff;  // TODO: allocate this in the beginning, it does not change
-	leds[4*led_number + 1] = r;
-	leds[4*led_number + 2] = b;
-	leds[4*led_number + 3] = g;
+	leds[4*led_number + 1] = red;
+	leds[4*led_number + 2] = blue;
+	leds[4*led_number + 3] = green;
 }
 
-uint32_t hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v)
+uint32_t hsv_to_rgb(uint16_t hue, uint8_t saturation, uint8_t value)
 {
-	uint8_t f = (h % 60) * 255 / 60;
-	uint8_t p = (255 - s) * (uint16_t)v / 255;
-	uint8_t q = (255 - f * (uint16_t)s / 255) * (uint16_t)v / 255;
-	uint8_t t = (255 - (255 - f) * (uint16_t)s / 255) * (uint16_t)v / 255;
-	uint32_t r = 0, g = 0, b = 0;
+	uint8_t remainder = (hue % 60) * 255 / 60;
+	uint8_t p = (value * (255 - saturation)) >> 8;
+	uint8_t q = (value * (255 - ((saturation * remainder) >> 8))) >> 8;
+	uint8_t t = (value * (255 - ((saturation * (255 - remainder)) >> 8))) >> 8;
+	uint32_t red;
+	uint32_t green;
+	uint32_t blue;
 
-	switch((h / 60) % 6){
-		case 0: r = v; g = t; b = p; break;
-		case 1: r = q; g = v; b = p; break;
-		case 2: r = p; g = v; b = t; break;
-		case 3: r = p; g = q; b = v; break;
-		case 4: r = t; g = p; b = v; break;
-		case 5: r = v; g = p; b = q; break;
+	switch((hue / 60) % 6){
+		case 0:	// (0 <= deg < 60)
+			red = value;
+			green = t;
+			blue = p;
+			break;
+		case 1:	// (60 <= deg < 120)
+			red = q;
+			green = value;
+			blue = p;
+			break;
+		case 2:	// (120 <= deg < 180)
+			red = p;
+			green = value;
+			blue = t;
+			break;
+		case 3:	// (180 <= deg < 240)
+			red = p;
+			green = q;
+			blue = value;
+			break;
+		case 4:	// (240 <= deg < 300)
+			red = t;
+			green = p;
+			blue = value;
+			break;
+		default:	// (300 <= deg < 360)
+			red = value;
+			green = p;
+			blue = q;
+			break;
 	}
-	return (r << 16 | g << 8 | b);
+	return (red << 16 | green << 8 | blue);
 }
 
 void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, spi_device_handle_t *spi_handle,
@@ -88,8 +116,8 @@ void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, sp
 	spi_bus_config_t spi_config;
 	memset(&spi_config, 0, sizeof(spi_bus_config_t));
 	spi_config.sclk_io_num = clk_pin;
-	spi_config.mosi_io_num = data_pin,
-	spi_config.miso_io_num = -1,
+	spi_config.mosi_io_num = data_pin;
+	spi_config.miso_io_num = -1;
 	spi_config.quadwp_io_num = -1;
 	spi_config.quadhd_io_num = -1;
 	spi_config.max_transfer_sz = 4*(led_number+2);
@@ -110,8 +138,8 @@ void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, sp
 	dev_config.spics_io_num = -1;
 	dev_config.flags = 0;
 	dev_config.queue_size = 1;
-	dev_config.pre_cb = NULL;
-	dev_config.post_cb = NULL;
+	dev_config.pre_cb = nullptr;
+	dev_config.post_cb = nullptr;
 	ESP_ERROR_CHECK(spi_bus_add_device(spi_slot, &dev_config, spi_handle));
 
 	ESP_ERROR_CHECK(spi_device_acquire_bus(*spi_handle, portMAX_DELAY));
@@ -120,10 +148,10 @@ void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, sp
 	trans_desc->addr = 0;
 	trans_desc->cmd = 0;
 	trans_desc->flags = 0;
-	trans_desc->length = 32*(led_number+2);
+	trans_desc->length = (2 + led_number) * 32;
 	trans_desc->rxlength = 0;
 	trans_desc->tx_buffer = led_data;
-	trans_desc->rx_buffer = 0;
+	trans_desc->rx_buffer = nullptr;
 }
 
 void stop_driver(void *pvParameters)
@@ -187,7 +215,6 @@ void go_driver(void *pvParameters)
 	uint16_t color_shift = 0xf333;
 	uint16_t colors;
 	uint32_t color_time;
-	uint32_t colors_hsv;
 
 	while(true) {
 
@@ -228,7 +255,7 @@ void go_driver(void *pvParameters)
 				color_time = 0xff & esp_log_timestamp();
 				for (int led = 1; led <= GO_LED_NUMBER; led++){
 					uint8_t x = color_time - go_sign_y[led-1];
-					colors_hsv = hsv_to_rgb((uint32_t)x * 359 / 256, 255, 255);
+					uint32_t colors_hsv = hsv_to_rgb((uint32_t)x * 359 / 256, 255, 255);
 					led_color(data, led, (char) (colors_hsv >> 16) & 0x7f,
 						(char) (colors_hsv >> 8) & 0x7f, (char) colors_hsv & 0x7f); // rgb
 				}
@@ -241,7 +268,7 @@ void go_driver(void *pvParameters)
 }
 
 
-void app_main(void)
+void app_main()
 {
 	// TODO: Move out in to init_wifi() ?
 	/* Init WiFi */
@@ -277,9 +304,9 @@ void app_main(void)
 		stop_driver,	/* Task's function. */
 		"Stop sign driver",	/* Name of the task. */
 		10000,			/* Stack size of the task */
-		NULL,			/* Parameter of the task */
+		nullptr,			/* Parameter of the task */
 		2,				/* Priority of the task */
-		NULL,			/* Task handle to keep track of created task */
+		nullptr,			/* Task handle to keep track of created task */
 		1);				/* Pin task to core 1 */
 
 
@@ -287,8 +314,8 @@ void app_main(void)
 		go_driver,		/* Task's function. */
 		"Go sign driver",	/* Name of the task. */
 		10000,			/* Stack size of the task */
-		NULL,			/* Parameter of the task */
+		nullptr,			/* Parameter of the task */
 		3,				/* Priority of the task */
-		NULL,			/* Task handle to keep track of created task */
+		nullptr,			/* Task handle to keep track of created task */
 		1);				/* Pin task to core 1 */
 }
