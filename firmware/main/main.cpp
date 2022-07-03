@@ -293,29 +293,31 @@ void app_main()
 	 * Read "Establishing Wi-Fi or Ethernet Connection" section in
 	 * examples/protocols/README.md for more information about this function.
 	 */
-	//ESP_ERROR_CHECK(example_connect());
+	ESP_ERROR_CHECK(example_connect());
 
 	// add handlers for the URLs
 	g_webServer.addHandler(&g_root)
 			   .addHandler(&g_echo)
 			   .addHandler(&g_about);
+	
+//	xTaskCreatePinnedToCore(
+//		stop_driver,	/* Task's function. */
+//		"Stop sign driver",	/* Name of the task. */
+//		10000,			/* Stack size of the task */
+//		nullptr,			/* Parameter of the task */
+//		2,				/* Priority of the task */
+//		nullptr,			/* Task handle to keep track of created task */
+//		1);				/* Pin task to core 1 */
+//
+//
+//	xTaskCreatePinnedToCore(
+//		go_driver,		/* Task's function. */
+//		"Go sign driver",	/* Name of the task. */
+//		10000,			/* Stack size of the task */
+//		nullptr,			/* Parameter of the task */
+//		3,				/* Priority of the task */
+//		nullptr,			/* Task handle to keep track of created task */
+//		1);				/* Pin task to core 1 */
 
-	xTaskCreatePinnedToCore(
-		stop_driver,	/* Task's function. */
-		"Stop sign driver",	/* Name of the task. */
-		10000,			/* Stack size of the task */
-		nullptr,			/* Parameter of the task */
-		2,				/* Priority of the task */
-		nullptr,			/* Task handle to keep track of created task */
-		1);				/* Pin task to core 1 */
-
-
-	xTaskCreatePinnedToCore(
-		go_driver,		/* Task's function. */
-		"Go sign driver",	/* Name of the task. */
-		10000,			/* Stack size of the task */
-		nullptr,			/* Parameter of the task */
-		3,				/* Priority of the task */
-		nullptr,			/* Task handle to keep track of created task */
-		1);				/* Pin task to core 1 */
+	
 }
