@@ -36,17 +36,13 @@
 using namespace std;
 
 extern "C" {
-void app_main();
+	void app_main();
 }
 
 const char *TAG = "Traffic Light";
 
 void led_color(char *leds, uint8_t led_number, char r, char g, char b);
 
-/*
-/
-/   
-*/
 uint32_t hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v);
 void stop_driver(void *pvParameters);
 void go_driver(void *pvParameters);
@@ -150,10 +146,10 @@ void stop_driver(void *pvParameters)
 	data[(STOP_LED_NUMBER+1)*4 + 3] = 0xff;
 
 	while(true) { 
-
-		for (int led = 1; led <= STOP_LED_NUMBER; led++){
+		for (int led = 1; led <= STOP_LED_NUMBER; led++) {
 			led_color(data, led, 0x7f, 0x00, 0x00);	// rgb
 		}
+		
 		ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle, &trans_desc, portMAX_DELAY));
 		vTaskDelay(10000 / portTICK_RATE_MS);
 	}
@@ -189,7 +185,7 @@ void go_driver(void *pvParameters)
 	uint32_t color_time;
 	uint32_t colors_hsv;
 
-	while(true) {
+	while(1) {
 
 		switch (state) {
 			case STATIC:
@@ -270,17 +266,18 @@ void app_main(void)
 
 	// add handlers for the URLs
 	g_webServer.addHandler(&g_root)
-			   .addHandler(&g_echo)
-			   .addHandler(&g_about);
+		   .addHandler(&g_echo)
+		   .addHandler(&g_about);
 
 	xTaskCreatePinnedToCore(
-		stop_driver,	/* Task's function. */
+		stop_driver,		/* Task's function. */
 		"Stop sign driver",	/* Name of the task. */
 		10000,			/* Stack size of the task */
 		NULL,			/* Parameter of the task */
-		2,				/* Priority of the task */
+		2,			/* Priority of the task */
 		NULL,			/* Task handle to keep track of created task */
-		1);				/* Pin task to core 1 */
+		1			/* Pin task to core 1 */
+	);
 
 
 	xTaskCreatePinnedToCore(
@@ -288,7 +285,8 @@ void app_main(void)
 		"Go sign driver",	/* Name of the task. */
 		10000,			/* Stack size of the task */
 		NULL,			/* Parameter of the task */
-		3,				/* Priority of the task */
+		3,			/* Priority of the task */
 		NULL,			/* Task handle to keep track of created task */
-		1);				/* Pin task to core 1 */
+		1			/* Pin task to core 1 */
+	);
 }
