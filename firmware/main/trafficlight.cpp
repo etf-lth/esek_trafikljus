@@ -36,12 +36,11 @@ void TrafficLight::setStopColor(const Color &stop)
 	stop_data[(STOP_LED_NUMBER+1)*4 + 2] = 0xff;
 	stop_data[(STOP_LED_NUMBER+1)*4 + 3] = 0xff;
 
-	for (int led = 1; led <= STOP_LED_NUMBER; led++) {
-		Color::led_color(stop_data, led, m_stopColor.r(), m_stopColor.g(), m_stopColor.b());	// rgb
+	for (uint8_t led = 1; led <= STOP_LED_NUMBER; led++) {
+		Color::colorToLed(stop_data, led, m_stopColor.r(), m_stopColor.g(), m_stopColor.b());	// rgb
 	}
 		
 	ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle_stop, &trans_desc_stop, portMAX_DELAY));
-	//vTaskDelay(10000 / portTICK_RATE_MS);
 }
 
 
@@ -49,4 +48,21 @@ void TrafficLight::setGoColor(const Color &go)
 {
 	m_goColor = go;
 
+	// Start frame
+	go_data[0] = 0x00;
+	go_data[1] = 0x00;
+	go_data[2] = 0x00;
+	go_data[3] = 0x00;
+
+	// End frame
+	go_data[(GO_LED_NUMBER + 1) * 4 + 0] = 0xff;
+	go_data[(GO_LED_NUMBER + 1) * 4 + 1] = 0xff;
+	go_data[(GO_LED_NUMBER + 1) * 4 + 2] = 0xff;
+	go_data[(GO_LED_NUMBER + 1) * 4 + 3] = 0xff;
+
+	for (uint8_t led = 1; led <= GO_LED_NUMBER; led++) {
+		Color::colorToLed(go_data, led, m_stopColor.r(), m_stopColor.g(), m_stopColor.b());	// rgb
+	}
+
+	ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle_go, &trans_desc_go, portMAX_DELAY));
 }

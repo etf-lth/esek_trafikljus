@@ -14,7 +14,7 @@ Color::Color(const std::string &hexCode)
 }
 
 
-uint32_t Color::hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v)
+uint32_t Color::hsvToRgb(uint16_t h, uint8_t s, uint8_t v)
 {
 	uint8_t f = (h % 60) * 255 / 60;
 	uint8_t p = (255 - s) * (uint16_t)v / 255;
@@ -34,7 +34,7 @@ uint32_t Color::hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v)
 }
 
 
-void Color::led_color(char *leds, uint8_t led_number, char r, char g, char b)
+void Color::colorToLed(char *leds, uint8_t led_number, char r, char g, char b)
 {
 	leds[4*led_number + 0] = 0xff;  // TODO: allocate this in the beginning, it does not change
 	leds[4*led_number + 1] = r;

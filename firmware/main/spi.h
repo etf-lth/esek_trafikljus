@@ -10,3 +10,7 @@ void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, sp
 extern spi_device_handle_t spi_handle_stop;
 extern spi_transaction_t trans_desc_stop;
 extern char stop_data[4 * (STOP_LED_NUMBER + 2)];
+
+extern spi_device_handle_t spi_handle_go;
+extern spi_transaction_t trans_desc_go;
+extern char go_data[4 * (GO_LED_NUMBER + 2)];

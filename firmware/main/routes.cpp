@@ -24,7 +24,8 @@ esp_err_t root_get_handler(httpd_req_t *req)
 	}
 
 	HTMLResponse response(req);
-	response.addHeader("Custom Header 1", "Eat shit and die")
+	// TODO: randomize header resonses?
+	response.addHeader("Random header", "Eat shit and die")
 	        .addData(index_html);
 
 	g_webServer.send(response);
@@ -42,8 +43,7 @@ esp_err_t echo_post_handler(httpd_req_t *req)
 	while (remaining > 0)
 	{
 		/* Read the data for the request */
-		if ((ret = httpd_req_recv(req, buf,
-		                          MIN(remaining, sizeof(buf)))) <= 0)
+		if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0)
 		{
 			if (ret == HTTPD_SOCK_ERR_TIMEOUT)
 			{
@@ -200,11 +200,11 @@ esp_err_t admin_handler(httpd_req_t *req)
 		ESP_LOGI(TAG, "Authenticated!");
 
 		const auto params = g_webServer.getQueryParams(req);
-		if (params.find(WebConstants::g_colorTop) != params.end())
+		if (params.find(WebConstants::g_colorStop) != params.end())
 		{
-			cout << "Top color: " << params.at(WebConstants::g_colorTop) << endl;
+			cout << "stop color: " << params.at(WebConstants::g_colorStop) << endl;
 
-			const auto &val = params.at(WebConstants::g_colorTop);
+			const auto &val = params.at(WebConstants::g_colorStop);
 			if (val.length() == WebConstants::g_hexStringLength)
 			{
 				// skip the "%23" sign (#)
@@ -214,15 +214,15 @@ esp_err_t admin_handler(httpd_req_t *req)
 			}
 		}
 
-		if (params.find(WebConstants::g_colorBottom) != params.end())
+		if (params.find(WebConstants::g_colorGo) != params.end())
 		{
-			const auto &val = params.at(WebConstants::g_colorBottom);
+			const auto &val = params.at(WebConstants::g_colorGo);
 			if (val.length() == WebConstants::g_hexStringLength)
 			{
 				// skip the "%23" sign (#)
 				const auto &hexVal = val.substr(3);
-				const UniColor bottomColor(hexVal);
-				g_trafficLight.setGoColor(bottomColor);
+				const UniColor goColor(hexVal);
+				g_trafficLight.setGoColor(goColor);
 			}
 		}
 

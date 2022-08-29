@@ -27,7 +27,6 @@
 #include "routes.h"
 #include "webserver.h"
 #include "spi.h"
-#include "color.h"
 
 #define STATIC      0
 #define SHIFTING    1
@@ -44,43 +43,8 @@ extern "C" {
 const char *TAG = "Traffic Light";
 
 
-void stop_driver(void *pvParameters);
 void go_driver(void *pvParameters);
-void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, spi_device_handle_t *spi_handle,
-		spi_transaction_t *trans_desc, char *led_data, int data_pin, int clk_pin, int led_number);
 
-
-
-void stop_driver(void *pvParameters)
-{
-	ESP_LOGI(TAG, "Setting up SPI for STOP sign.");
-	spi_device_handle_t spi_handle;
-	spi_transaction_t trans_desc;
-	char data[4*(STOP_LED_NUMBER+2)];
-
-
-	// Start frame
-	data[0] = 0x00;
-	data[1] = 0x00;
-	data[2] = 0x00;
-	data[3] = 0x00;
-
-	// End frame
-	data[(STOP_LED_NUMBER+1)*4 + 0] = 0xff;
-	data[(STOP_LED_NUMBER+1)*4 + 1] = 0xff;
-	data[(STOP_LED_NUMBER+1)*4 + 2] = 0xff;
-	data[(STOP_LED_NUMBER+1)*4 + 3] = 0xff;
-
-	while(true) { 
-		/*for (int led = 1; led <= STOP_LED_NUMBER; led++) {
-			led_color(data, led, 0x00, 0x08, 0x00);	// rgb
-		}
-		
-		ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle, &trans_desc, portMAX_DELAY));
-		vTaskDelay(10000 / portTICK_RATE_MS);
-		*/
-	}
-}
 
 /*
 void go_driver(void *pvParameters)
@@ -197,7 +161,8 @@ void app_main(void)
 		   .addHandler(&g_echo)
 		   .addHandler(&g_about);
 
-	
+
+	// initialize SPI for stop sign
 	traffic_spi_init(HSPI_HOST, SPI_DMA_CH1, &spi_handle_stop, &trans_desc_stop, stop_data,
 			STOP_LED_DATA_PIN, STOP_LED_CLK_PIN, STOP_LED_NUMBER);
 	ESP_LOGI(TAG, "Done configuring SPI for STOP sign.");

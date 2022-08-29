@@ -14,12 +14,14 @@ httpd_req_t* WebResponse::getRequestHandle()
 
 WebResponse& WebResponse::setStatus(const std::string &status)
 {
+	// TODO: implement this
 	return *this;
 }
 
 
 WebResponse& WebResponse::addHeader(const std::string &field, const std::string &value)
 {
+	// TODO: implement this
 	return *this;
 }
 

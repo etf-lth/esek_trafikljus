@@ -17,8 +17,8 @@ namespace WebConstants
 	const std::string g_queryStart = "?";
 	const std::string g_querySeparator = "&";
 	const std::string g_paramSeparator = "=";
-	const std::string g_colorTop = "top";
-	const std::string g_colorBottom = "bottom";
+	const std::string g_colorStop = "stop";
+	const std::string g_colorGo = "go";
 	constexpr int g_hexStringLength = 9; // including the "%23" ascii sign (#)
 }
 
