@@ -1,4 +1,5 @@
 #include "trafficlight.h"
+#include "spi.h"
 
 #include <iostream>
 
@@ -22,20 +23,30 @@ TrafficLight::TrafficLight() : m_stopColor(UniColor("ff0000")), m_goColor(UniCol
 void TrafficLight::setStopColor(const Color &stop)
 {
 	m_stopColor = stop;
-	if (stop.r() == 255)
-	{
-		std::cout << "TOP ON" << std::endl;
-		gpio_set_level(GPIO_NUM_18, 1);
+
+	// Start frame
+	stop_data[0] = 0x00;
+	stop_data[1] = 0x00;
+	stop_data[2] = 0x00;
+	stop_data[3] = 0x00;
+
+	// End frame
+	stop_data[(STOP_LED_NUMBER+1)*4 + 0] = 0xff;
+	stop_data[(STOP_LED_NUMBER+1)*4 + 1] = 0xff;
+	stop_data[(STOP_LED_NUMBER+1)*4 + 2] = 0xff;
+	stop_data[(STOP_LED_NUMBER+1)*4 + 3] = 0xff;
+
+	for (int led = 1; led <= STOP_LED_NUMBER; led++) {
+		Color::led_color(stop_data, led, m_stopColor.r(), m_stopColor.g(), m_stopColor.b());	// rgb
 	}
-	else if (stop.r() == 0)
-	{
-		std::cout << "TOP OFF" << std::endl;
-		gpio_set_level(GPIO_NUM_18, 0);
-	}
+		
+	ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle_stop, &trans_desc_stop, portMAX_DELAY));
+	//vTaskDelay(10000 / portTICK_RATE_MS);
 }
 
 
 void TrafficLight::setGoColor(const Color &go)
 {
 	m_goColor = go;
+
 }

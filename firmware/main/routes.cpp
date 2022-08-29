@@ -209,8 +209,8 @@ esp_err_t admin_handler(httpd_req_t *req)
 			{
 				// skip the "%23" sign (#)
 				const auto &hexVal = val.substr(3);
-				const UniColor topColor(hexVal);
-				g_trafficLight.setStopColor(topColor);
+				const UniColor stopColor(hexVal);
+				g_trafficLight.setStopColor(stopColor);
 			}
 		}
 

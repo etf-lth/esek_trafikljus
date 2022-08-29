@@ -26,6 +26,9 @@ public:
 	unsigned int r() const { return m_red; }
 	unsigned int g() const { return m_green; }
 	unsigned int b() const { return m_blue; }
+
+	static void led_color(char *leds, uint8_t led_number, char r, char g, char b);
+	static uint32_t hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v);
 };
 
 

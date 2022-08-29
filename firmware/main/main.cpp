@@ -26,6 +26,8 @@
 #include "io.h"
 #include "routes.h"
 #include "webserver.h"
+#include "spi.h"
+#include "color.h"
 
 #define STATIC      0
 #define SHIFTING    1
@@ -41,86 +43,13 @@ extern "C" {
 
 const char *TAG = "Traffic Light";
 
-void led_color(char *leds, uint8_t led_number, char r, char g, char b);
 
-uint32_t hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v);
 void stop_driver(void *pvParameters);
 void go_driver(void *pvParameters);
 void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, spi_device_handle_t *spi_handle,
 		spi_transaction_t *trans_desc, char *led_data, int data_pin, int clk_pin, int led_number);
 
 
-void led_color(char *leds, uint8_t led_number, char r, char g, char b)
-{
-	leds[4*led_number + 0] = 0xff;  // TODO: allocate this in the beginning, it does not change
-	leds[4*led_number + 1] = r;
-	leds[4*led_number + 2] = b;
-	leds[4*led_number + 3] = g;
-}
-
-uint32_t hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v)
-{
-	uint8_t f = (h % 60) * 255 / 60;
-	uint8_t p = (255 - s) * (uint16_t)v / 255;
-	uint8_t q = (255 - f * (uint16_t)s / 255) * (uint16_t)v / 255;
-	uint8_t t = (255 - (255 - f) * (uint16_t)s / 255) * (uint16_t)v / 255;
-	uint32_t r = 0, g = 0, b = 0;
-
-	switch((h / 60) % 6){
-		case 0: r = v; g = t; b = p; break;
-		case 1: r = q; g = v; b = p; break;
-		case 2: r = p; g = v; b = t; break;
-		case 3: r = p; g = q; b = v; break;
-		case 4: r = t; g = p; b = v; break;
-		case 5: r = v; g = p; b = q; break;
-	}
-	return (r << 16 | g << 8 | b);
-}
-
-void traffic_spi_init(spi_host_device_t spi_slot, spi_dma_chan_t dma_channel, spi_device_handle_t *spi_handle,
-		spi_transaction_t *trans_desc, char *led_data, int data_pin, int clk_pin, int led_number)
-{
-	// SPI bus configuration
-	spi_bus_config_t spi_config;
-	memset(&spi_config, 0, sizeof(spi_bus_config_t));
-	spi_config.sclk_io_num = clk_pin;
-	spi_config.mosi_io_num = data_pin,
-	spi_config.miso_io_num = -1,
-	spi_config.quadwp_io_num = -1;
-	spi_config.quadhd_io_num = -1;
-	spi_config.max_transfer_sz = 4*(led_number+2);
-	spi_config.flags = SPICOMMON_BUSFLAG_GPIO_PINS;
-	ESP_ERROR_CHECK(spi_bus_initialize(spi_slot, &spi_config, dma_channel));
-
-	// Device configuration
-	spi_device_interface_config_t dev_config;
-	memset(&dev_config, 0, sizeof(spi_device_interface_config_t));
-	dev_config.address_bits = 0;
-	dev_config.command_bits = 0;
-	dev_config.dummy_bits = 0;
-	dev_config.mode = 0;
-	dev_config.duty_cycle_pos = 0;
-	dev_config.cs_ena_posttrans = 0;
-	dev_config.cs_ena_pretrans = 0;
-	dev_config.clock_speed_hz = SPI_CLOCK;
-	dev_config.spics_io_num = -1;
-	dev_config.flags = 0;
-	dev_config.queue_size = 1;
-	dev_config.pre_cb = NULL;
-	dev_config.post_cb = NULL;
-	ESP_ERROR_CHECK(spi_bus_add_device(spi_slot, &dev_config, spi_handle));
-
-	ESP_ERROR_CHECK(spi_device_acquire_bus(*spi_handle, portMAX_DELAY));
-	// SPI transaction description
-	memset(trans_desc, 0, sizeof(spi_transaction_t));
-	trans_desc->addr = 0;
-	trans_desc->cmd = 0;
-	trans_desc->flags = 0;
-	trans_desc->length = 32*(led_number+2);
-	trans_desc->rxlength = 0;
-	trans_desc->tx_buffer = led_data;
-	trans_desc->rx_buffer = 0;
-}
 
 void stop_driver(void *pvParameters)
 {
@@ -129,9 +58,6 @@ void stop_driver(void *pvParameters)
 	spi_transaction_t trans_desc;
 	char data[4*(STOP_LED_NUMBER+2)];
 
-	traffic_spi_init(HSPI_HOST, SPI_DMA_CH1, &spi_handle, &trans_desc, data,
-			STOP_LED_DATA_PIN, STOP_LED_CLK_PIN, STOP_LED_NUMBER);
-	ESP_LOGI(TAG, "Done configuring SPI for STOP sign.");
 
 	// Start frame
 	data[0] = 0x00;
@@ -146,15 +72,17 @@ void stop_driver(void *pvParameters)
 	data[(STOP_LED_NUMBER+1)*4 + 3] = 0xff;
 
 	while(true) { 
-		for (int led = 1; led <= STOP_LED_NUMBER; led++) {
-			led_color(data, led, 0x7f, 0x00, 0x00);	// rgb
+		/*for (int led = 1; led <= STOP_LED_NUMBER; led++) {
+			led_color(data, led, 0x00, 0x08, 0x00);	// rgb
 		}
 		
 		ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle, &trans_desc, portMAX_DELAY));
 		vTaskDelay(10000 / portTICK_RATE_MS);
+		*/
 	}
 }
 
+/*
 void go_driver(void *pvParameters)
 {
 	ESP_LOGI(TAG, "Setting up SPI for GO sign.");
@@ -224,7 +152,7 @@ void go_driver(void *pvParameters)
 				color_time = 0xff & esp_log_timestamp();
 				for (int led = 1; led <= GO_LED_NUMBER; led++){
 					uint8_t x = color_time - go_sign_y[led-1];
-					colors_hsv = hsv_to_rgb((uint32_t)x * 359 / 256, 255, 255);
+					colors_hsv = Color::hsv_to_rgb((uint32_t)x * 359 / 256, 255, 255);
 					led_color(data, led, (char) (colors_hsv >> 16) & 0x7f,
 						(char) (colors_hsv >> 8) & 0x7f, (char) colors_hsv & 0x7f); // rgb
 				}
@@ -235,7 +163,7 @@ void go_driver(void *pvParameters)
 		vTaskDelay(157 / portTICK_RATE_MS);
 	}
 }
-
+*/
 
 void app_main(void)
 {
@@ -262,31 +190,36 @@ void app_main(void)
 	 * Read "Establishing Wi-Fi or Ethernet Connection" section in
 	 * examples/protocols/README.md for more information about this function.
 	 */
-	//ESP_ERROR_CHECK(example_connect());
+	ESP_ERROR_CHECK(example_connect());
 
 	// add handlers for the URLs
 	g_webServer.addHandler(&g_root)
 		   .addHandler(&g_echo)
 		   .addHandler(&g_about);
 
-	xTaskCreatePinnedToCore(
-		stop_driver,		/* Task's function. */
-		"Stop sign driver",	/* Name of the task. */
-		10000,			/* Stack size of the task */
-		NULL,			/* Parameter of the task */
-		2,			/* Priority of the task */
-		NULL,			/* Task handle to keep track of created task */
-		1			/* Pin task to core 1 */
-	);
+	
+	traffic_spi_init(HSPI_HOST, SPI_DMA_CH1, &spi_handle_stop, &trans_desc_stop, stop_data,
+			STOP_LED_DATA_PIN, STOP_LED_CLK_PIN, STOP_LED_NUMBER);
+	ESP_LOGI(TAG, "Done configuring SPI for STOP sign.");
+
+//	xTaskCreatePinnedToCore(
+//		stop_driver,		/* Task's function. */
+//		"Stop sign driver",	/* Name of the task. */
+//		10000,			/* Stack size of the task */
+//		NULL,			/* Parameter of the task */
+//		2,			/* Priority of the task */
+//		NULL,			/* Task handle to keep track of created task */
+//		1			/* Pin task to core 1 */
+//	);
 
 
-	xTaskCreatePinnedToCore(
-		go_driver,		/* Task's function. */
-		"Go sign driver",	/* Name of the task. */
-		10000,			/* Stack size of the task */
-		NULL,			/* Parameter of the task */
-		3,			/* Priority of the task */
-		NULL,			/* Task handle to keep track of created task */
-		1			/* Pin task to core 1 */
-	);
+//	xTaskCreatePinnedToCore(
+//		go_driver,		/* Task's function. */
+//		"Go sign driver",	/* Name of the task. */
+//		10000,			/* Stack size of the task */
+//		NULL,			/* Parameter of the task */
+//		3,			/* Priority of the task */
+//		NULL,			/* Task handle to keep track of created task */
+//		1			/* Pin task to core 1 */
+//	);
 }
