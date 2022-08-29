@@ -11,3 +11,6 @@ sdkconfig.old
 .vs
 debug.log
 CMakeSettings.json
+
+# vim
+*.swp
