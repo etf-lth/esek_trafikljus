@@ -2,8 +2,11 @@
 #include "spi.h"
 
 #include <iostream>
+#include <esp_log.h>
 
 #include "driver/gpio.h"
+
+extern const char *TAG;
 
 /* A global Traffic Light variable, since we need to access this from multiples places. */
 TrafficLight g_trafficLight;
@@ -22,6 +25,7 @@ TrafficLight::TrafficLight() : m_stopColor(UniColor("ff0000")), m_goColor(UniCol
 
 void TrafficLight::setStopColor(const Color &stop)
 {
+	ESP_LOGI(TAG, "setStopColor(%x, %x, %x)", stop.r(), stop.g(), stop.b());
 	m_stopColor = stop;
 
 	// Start frame
@@ -61,7 +65,7 @@ void TrafficLight::setGoColor(const Color &go)
 	go_data[(GO_LED_NUMBER + 1) * 4 + 3] = 0xff;
 
 	for (uint8_t led = 1; led <= GO_LED_NUMBER; led++) {
-		Color::colorToLed(go_data, led, m_stopColor.r(), m_stopColor.g(), m_stopColor.b());	// rgb
+		Color::colorToLed(go_data, led, m_goColor.r(), m_goColor.g(), m_goColor.b());	// rgb
 	}
 
 	ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle_go, &trans_desc_go, portMAX_DELAY));

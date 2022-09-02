@@ -162,10 +162,14 @@ void app_main(void)
 		   .addHandler(&g_about);
 
 
-	// initialize SPI for stop sign
+	// initialize SPI for stop and go sign
 	traffic_spi_init(HSPI_HOST, SPI_DMA_CH1, &spi_handle_stop, &trans_desc_stop, stop_data,
 			STOP_LED_DATA_PIN, STOP_LED_CLK_PIN, STOP_LED_NUMBER);
 	ESP_LOGI(TAG, "Done configuring SPI for STOP sign.");
+	
+	traffic_spi_init(VSPI_HOST, SPI_DMA_CH2, &spi_handle_go, &trans_desc_go, go_data,
+			GO_LED_DATA_PIN, GO_LED_CLK_PIN, GO_LED_NUMBER);
+	ESP_LOGI(TAG, "Done configuring SPI for GO sign.");
 
 //	xTaskCreatePinnedToCore(
 //		stop_driver,		/* Task's function. */
