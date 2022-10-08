@@ -21,6 +21,8 @@
 #include "spi.h"
 #include "fan.h"
 
+#include "driver/ledc.h"
+
 #define STATIC 0
 #define SHIFTING 1
 #define SWEEP 2
@@ -127,6 +129,9 @@ void app_main()
 	ESP_ERROR_CHECK(esp_netif_init());
 	ESP_ERROR_CHECK(esp_event_loop_create_default());
 
+	fanControl.init();
+	fanControl.setGoIntensity(10000);
+
 	/**
 	 * Register two events and bind the callbacks to the WiFi object.
 	 * We want to know when we have an IP, and when we disconnet from the WiFi.
@@ -148,8 +153,6 @@ void app_main()
 	g_webServer.addHandler(&g_root)
 		.addHandler(&g_echo)
 		.addHandler(&g_about);
-
-	Fan::init();
 
 	// initialize SPI for stop and go sign
 	traffic_spi_init(HSPI_HOST, SPI_DMA_CH1, &spi_handle_stop, &trans_desc_stop, stop_data,

@@ -40,14 +40,17 @@ void TrafficLight::setStopColor(const Color &stop)
 	stop_data[(STOP_LED_NUMBER + 1) * 4 + 2] = 0xff;
 	stop_data[(STOP_LED_NUMBER + 1) * 4 + 3] = 0xff;
 
+	unsigned int accumIntensity = 0;
+
 	for (uint8_t led = 1; led <= STOP_LED_NUMBER; led++)
 	{
+		accumIntensity += m_stopColor.r() + m_stopColor.g() + m_goColor.b();
 		Color::colorToLed(stop_data, led, m_stopColor.r(), m_stopColor.g(), m_stopColor.b()); // rgb
 	}
 
 	ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle_stop, &trans_desc_stop, portMAX_DELAY));
 
-	Fan::setSpeed(m_stopColor.r() / 255 * 100);
+	// include fan.h
 }
 
 void TrafficLight::setGoColor(const Color &go)
@@ -73,5 +76,5 @@ void TrafficLight::setGoColor(const Color &go)
 
 	ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle_go, &trans_desc_go, portMAX_DELAY));
 
-	Fan::setSpeed(m_goColor.r() / 255 * 100);
+	// include fan.h
 }
