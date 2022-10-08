@@ -19,26 +19,25 @@
 #include "routes.h"
 #include "webserver.h"
 #include "spi.h"
+#include "fan.h"
 
-#define STATIC      0
-#define SHIFTING    1
-#define SWEEP       2
-#define RAINBOW     3
+#include "driver/ledc.h"
 
+#define STATIC 0
+#define SHIFTING 1
+#define SWEEP 2
+#define RAINBOW 3
 
 using namespace std;
 
-extern "C" {
+extern "C"
+{
 	void app_main();
 }
 
 const char *TAG = "Traffic Light";
 
-
 void go_driver(void *pvParameters);
-
-
-
 
 /*
 void go_driver(void *pvParameters)
@@ -79,7 +78,7 @@ void go_driver(void *pvParameters)
 					led_color(data, led, 0x00, 0x7f, 0x00);	// rgb
 				}
 				break;
-			
+
 			case SHIFTING:
 
 				color_time = 0xff & esp_log_timestamp();
@@ -130,18 +129,19 @@ void app_main()
 	ESP_ERROR_CHECK(esp_netif_init());
 	ESP_ERROR_CHECK(esp_event_loop_create_default());
 
+	fanControl.init();
+	fanControl.setGoIntensity(10000);
+
 	/**
 	 * Register two events and bind the callbacks to the WiFi object.
 	 * We want to know when we have an IP, and when we disconnet from the WiFi.
 	 */
 	ESP_ERROR_CHECK(
-		esp_event_handler_instance_register(IP_EVENT, IP_EVENT_STA_GOT_IP, WebServer::connectHandler, nullptr, nullptr)
-	);
+		esp_event_handler_instance_register(IP_EVENT, IP_EVENT_STA_GOT_IP, WebServer::connectHandler, nullptr, nullptr));
 
 	ESP_ERROR_CHECK(
 		esp_event_handler_instance_register(WIFI_EVENT, WIFI_EVENT_STA_DISCONNECTED, WebServer::disconnectHandler,
-			nullptr, nullptr)
-	);
+											nullptr, nullptr));
 
 	/* This helper function configures Wi-Fi or Ethernet, as selected in menuconfig.
 	 * Read "Establishing Wi-Fi or Ethernet Connection" section in
@@ -151,37 +151,35 @@ void app_main()
 
 	// add handlers for the URLs
 	g_webServer.addHandler(&g_root)
-		   .addHandler(&g_echo)
-		   .addHandler(&g_about);
-
+		.addHandler(&g_echo)
+		.addHandler(&g_about);
 
 	// initialize SPI for stop and go sign
 	traffic_spi_init(HSPI_HOST, SPI_DMA_CH1, &spi_handle_stop, &trans_desc_stop, stop_data,
-			STOP_LED_DATA_PIN, STOP_LED_CLK_PIN, STOP_LED_NUMBER);
+					 STOP_LED_DATA_PIN, STOP_LED_CLK_PIN, STOP_LED_NUMBER);
 	ESP_LOGI(TAG, "Done configuring SPI for STOP sign.");
-	
+
 	traffic_spi_init(VSPI_HOST, SPI_DMA_CH2, &spi_handle_go, &trans_desc_go, go_data,
-			GO_LED_DATA_PIN, GO_LED_CLK_PIN, GO_LED_NUMBER);
+					 GO_LED_DATA_PIN, GO_LED_CLK_PIN, GO_LED_NUMBER);
 	ESP_LOGI(TAG, "Done configuring SPI for GO sign.");
 
-//	xTaskCreatePinnedToCore(
-//		stop_driver,		/* Task's function. */
-//		"Stop sign driver",	/* Name of the task. */
-//		10000,			/* Stack size of the task */
-//		nullptr,			/* Parameter of the task */
-//		2,			/* Priority of the task */
-//		nullptr,			/* Task handle to keep track of created task */
-//		1			/* Pin task to core 1 */
-//	);
+	//	xTaskCreatePinnedToCore(
+	//		stop_driver,		/* Task's function. */
+	//		"Stop sign driver",	/* Name of the task. */
+	//		10000,			/* Stack size of the task */
+	//		nullptr,			/* Parameter of the task */
+	//		2,			/* Priority of the task */
+	//		nullptr,			/* Task handle to keep track of created task */
+	//		1			/* Pin task to core 1 */
+	//	);
 
-
-//	xTaskCreatePinnedToCore(
-//		go_driver,		/* Task's function. */
-//		"Go sign driver",	/* Name of the task. */
-//		10000,			/* Stack size of the task */
-//		NULL,			/* Parameter of the task */
-//		3,			/* Priority of the task */
-//		NULL,			/* Task handle to keep track of created task */
-//		1			/* Pin task to core 1 */
-//	);
+	//	xTaskCreatePinnedToCore(
+	//		go_driver,		/* Task's function. */
+	//		"Go sign driver",	/* Name of the task. */
+	//		10000,			/* Stack size of the task */
+	//		NULL,			/* Parameter of the task */
+	//		3,			/* Priority of the task */
+	//		NULL,			/* Task handle to keep track of created task */
+	//		1			/* Pin task to core 1 */
+	//	);
 }
