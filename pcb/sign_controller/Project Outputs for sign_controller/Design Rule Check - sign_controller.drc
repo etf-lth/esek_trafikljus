@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : D:\Work\ETF\trafikljus\pcb\sign_controller\sign_controller.PcbDoc
-Date     : 2022-02-13
-Time     : 21:57:05
+PCB File : C:\git_projects\esek_trafikljus\pcb\sign_controller\sign_controller.PcbDoc
+Date     : 11/17/2024
+Time     : 10:37:26 PM
 
 Processing Rule : Clearance Constraint (Gap=0.4mm) (All),(All)
 Rule Violations :0
@@ -10,7 +10,8 @@ Processing Rule : Clearance Constraint (Gap=0.4mm) (InComponent('U1','U2','U3','
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-Rule Violations :0
+   Violation between Short-Circuit Constraint: Between Polygon Region (91 hole(s)) Top Layer And Text "3V3_A" (51.88mm,-11.73mm) on Top Layer Location : [X = 0mm][Y = 0mm]
+Rule Violations :1
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
@@ -30,13 +31,13 @@ Rule Violations :0
 Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (Disabled)(All),(All)
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (Disabled)(IsPad),(All)
+Processing Rule : Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)
 Rule Violations :0
 
-Processing Rule : Silk to Silk (Clearance=0.254mm) (Disabled)(All),(All)
+Processing Rule : Silk to Silk (Clearance=0.15mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
@@ -46,6 +47,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=40mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 0
+Violations Detected : 1
 Waived Violations : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:00
