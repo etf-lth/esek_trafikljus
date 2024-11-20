@@ -13,3 +13,5 @@ Project Outputs for sign_lib/
 !*.PcbDoc
 !*.SchLib
 !*.PcbLib
+
+*.zip

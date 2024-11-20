@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [sign_controller.PcbDoc]
+   Generated File[sign_controller.TXT]
+   Generated File[sign_controller.LDP]
+   Generated File[sign_controller.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 23:05:10 On 2024-11-19
