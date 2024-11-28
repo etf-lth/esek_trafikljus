@@ -1,5 +1,6 @@
 #include "trafficlight.h"
 #include "spi.h"
+#include "fan.h"
 
 #include <iostream>
 #include <esp_log.h>
@@ -22,7 +23,6 @@ TrafficLight::TrafficLight() : m_stopColor(UniColor("ff0000")), m_goColor(UniCol
 	gpio_config(&io_conf);
 }
 
-
 void TrafficLight::setStopColor(const Color &stop)
 {
 	ESP_LOGI(TAG, "setStopColor(%x, %x, %x)", stop.r(), stop.g(), stop.b());
@@ -35,18 +35,23 @@ void TrafficLight::setStopColor(const Color &stop)
 	stop_data[3] = 0x00;
 
 	// End frame
-	stop_data[(STOP_LED_NUMBER+1)*4 + 0] = 0xff;
-	stop_data[(STOP_LED_NUMBER+1)*4 + 1] = 0xff;
-	stop_data[(STOP_LED_NUMBER+1)*4 + 2] = 0xff;
-	stop_data[(STOP_LED_NUMBER+1)*4 + 3] = 0xff;
+	stop_data[(STOP_LED_NUMBER + 1) * 4 + 0] = 0xff;
+	stop_data[(STOP_LED_NUMBER + 1) * 4 + 1] = 0xff;
+	stop_data[(STOP_LED_NUMBER + 1) * 4 + 2] = 0xff;
+	stop_data[(STOP_LED_NUMBER + 1) * 4 + 3] = 0xff;
 
-	for (uint8_t led = 1; led <= STOP_LED_NUMBER; led++) {
-		Color::colorToLed(stop_data, led, m_stopColor.r(), m_stopColor.g(), m_stopColor.b());	// rgb
+	unsigned int accumIntensity = 0;
+
+	for (uint8_t led = 1; led <= STOP_LED_NUMBER; led++)
+	{
+		accumIntensity += m_stopColor.r() + m_stopColor.g() + m_goColor.b();
+		Color::colorToLed(stop_data, led, m_stopColor.r(), m_stopColor.g(), m_stopColor.b()); // rgb
 	}
-		
-	ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle_stop, &trans_desc_stop, portMAX_DELAY));
-}
 
+	ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle_stop, &trans_desc_stop, portMAX_DELAY));
+
+	// include fan.h
+}
 
 void TrafficLight::setGoColor(const Color &go)
 {
@@ -64,9 +69,12 @@ void TrafficLight::setGoColor(const Color &go)
 	go_data[(GO_LED_NUMBER + 1) * 4 + 2] = 0xff;
 	go_data[(GO_LED_NUMBER + 1) * 4 + 3] = 0xff;
 
-	for (uint8_t led = 1; led <= GO_LED_NUMBER; led++) {
-		Color::colorToLed(go_data, led, m_goColor.r(), m_goColor.g(), m_goColor.b());	// rgb
+	for (uint8_t led = 1; led <= GO_LED_NUMBER; led++)
+	{
+		Color::colorToLed(go_data, led, m_goColor.r(), m_goColor.g(), m_goColor.b()); // rgb
 	}
 
 	ESP_ERROR_CHECK(spi_device_queue_trans(spi_handle_go, &trans_desc_go, portMAX_DELAY));
+
+	// include fan.h
 }
