@@ -25,6 +25,8 @@
 #define SWEEP       2
 #define RAINBOW     3
 
+#define DO_NOT_USE_DEFINES 1
+
 
 using namespace std;
 
